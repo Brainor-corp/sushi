@@ -16,6 +16,9 @@
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo('rss_url'); ?>">
 	<link rel="alternate" type="application/rss+xml" title="Comments RSS" href="<?php bloginfo('comments_rss2_url'); ?>">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/main-page.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/main-page-media.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/general.css">
 
 	<?php /* Все скрипты и стили теперь подключаются в functions.php */ ?>
 
@@ -27,32 +30,28 @@
 </head>
 <body <?php body_class(); // все классы для body ?>>
 	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<nav class="navbar navbar-default">
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav" aria-expanded="false">
-								<span class="sr-only">Меню</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-						<div class="collapse navbar-collapse" id="topnav">
-							<?php $args = array( // опции для вывода верхнего меню, чтобы они работали, меню должно быть создано в админке
-								'theme_location' => 'top', // идентификатор меню, определен в register_nav_menus() в functions.php
-								'container'=> false, // обертка списка, тут не нужна
-						  		'menu_id' => 'top-nav-ul', // id для ul
-						  		'items_wrap' => '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>',
-								'menu_class' => 'top-menu', // класс для ul, первые 2 обязательны
-						  		'walker' => new bootstrap_menu(true) // верхнее меню выводится по разметке бутсрапа, см класс в functions.php, если по наведению субменю не раскрывать то передайте false		  		
-					  			);
-								wp_nav_menu($args); // выводим верхнее меню
-							?>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
+		<div class="container-fluid bg-light-grey">
+            <div class="container nav-container ">
+                <div class="row">
+                    <div class="col-12 bg-light-grey">
+                        <div class="row">
+                            <div class="col">
+                                <a class="text-uppercase" href="#">Главная</a>
+                                <a class="text-uppercase" href="#">Роллы</a>
+                                <a class="text-uppercase" href="#">Суши</a>
+                                <a class="text-uppercase" href="#">Наборы</a>
+                                <a class="text-uppercase" href="#">Напитки</a>
+                            </div>
+                            <div class="col">
+                                <p class="mb-0 text-right">(495) 800-08-88</p>
+                                <p class="mb-0 text-right">11:00-24:00</p>
+                            </div>
+                            <div class="col">
+                                знач.кор
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</header>
