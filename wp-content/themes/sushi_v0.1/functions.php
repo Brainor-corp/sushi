@@ -99,6 +99,8 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
 	    wp_enqueue_script('jquery','//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js','','',true); // добавляем свой
 	    wp_enqueue_script('bootstrap', get_template_directory_uri().'/js/bootstrap/bootstrap.min.js','','',true); // бутстрап
 	    wp_enqueue_script('main', get_template_directory_uri().'/js/main.js','','',true); // и скрипты шаблона
+	    wp_enqueue_script('main', get_template_directory_uri().'/plugins/offcanvas/js/bootstrap.offcanvas.min.js','','',true); // canvas
+        wp_enqueue_style( 'fas', get_template_directory_uri().'/plugins/fontawesome/js/all.js' );//fontawesome
 	}
 }
 
@@ -108,7 +110,8 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 	    if(is_admin()) return false; // если мы в админке - ничего не делаем
 	    wp_enqueue_style( 'bs', get_template_directory_uri().'/css/bootstrap/bootstrap.min.css' ); // бутстрап
 		wp_enqueue_style( 'main', get_template_directory_uri().'/style.css' ); // основные стили шаблона
-        wp_enqueue_style( 'fas', 'https://use.fontawesome.com/releases/v5.0.4/css/all.css' );
+        wp_enqueue_style( 'fas', get_template_directory_uri().'/plugins/fontawesome/css/all.css' );//fontawesome
+        wp_enqueue_style( 'canvas', get_template_directory_uri().'/plugins/offcanvas/css/bootstrap.offcanvas.min.css' );//canvas
 	}
 }
 

@@ -36,7 +36,7 @@
                     <div class="col-12 bg-light-grey">
                         <div class="row" id="shopMenu">
                             <div class="col-sm-9">
-                                <ul class="list-inline" >
+                                <ul class="list-inline mb-2">
                                     <li class="logo active list-inline-item">
                                         <a href="#top" title="Сайт службы доставки суши">
                                             <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" height="50" alt="Сайт службы доставки суши">
