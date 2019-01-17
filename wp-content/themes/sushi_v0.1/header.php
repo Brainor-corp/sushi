@@ -29,25 +29,41 @@
 	<?php wp_head(); // необходимо для работы плагинов и функционала ?>
 </head>
 <body <?php body_class(); // все классы для body ?>>
-	<header>
-		<div class="container-fluid bg-light-grey">
+	<header id="top">
+		<div class="container-fluid bg-light-grey head-fix" id="header-fixed">
             <div class="container nav-container ">
                 <div class="row">
                     <div class="col-12 bg-light-grey">
-                        <div class="row">
-                            <div class="col">
-                                <a class="text-uppercase" href="#">Главная</a>
-                                <a class="text-uppercase" href="#">Роллы</a>
-                                <a class="text-uppercase" href="#">Суши</a>
-                                <a class="text-uppercase" href="#">Наборы</a>
-                                <a class="text-uppercase" href="#">Напитки</a>
+                        <div class="row" id="shopMenu">
+                            <div class="col-sm-9">
+                                <ul class="list-inline" >
+                                    <li class="logo active list-inline-item">
+                                        <a href="#top" title="Сайт службы доставки суши">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" height="50" alt="Сайт службы доставки суши">
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#rolls">Роллы</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#sushi">Суши</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#combinations">Наборы</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#drinks">Напитки</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="col">
-                                <p class="mb-0 text-right">(495) 800-08-88</p>
-                                <p class="mb-0 text-right">11:00-24:00</p>
+                            <div class="col-sm-2 text-right">
+                                <div id="topPhone">
+                                    <strong>(495) 800-08-88</strong><br>
+                                    <i class="fa fa-clock-o"></i>11:00-24:00
+                                </div>
                             </div>
-                            <div class="col">
-                                знач.кор
+                            <div class="col-sm-1 text-right">
+                                <a href="#cart" class="cartLink" id="cartLink" title="Корзина"><i class="fa fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>

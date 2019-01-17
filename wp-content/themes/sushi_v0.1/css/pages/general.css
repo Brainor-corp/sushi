@@ -1,11 +1,103 @@
+.head-fix{
+    background: #f8f8f8;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 20px 0 0 0;
+    z-index: 200;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+header {
+    background: #f8f8f8;
+    height: 180px;
+    padding-top: 20px;
+    position: relative;
+}
+header #shopMenu {
+    margin-left: -20px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .1em;
+    font-weight: 700;
+}
+header #shopMenu li {
+    margin: 0 0 0 15px;
+    padding: 20px 5px;
+    border-bottom: 2px solid transparent;
+}
+#shopMenu li a {
+    border: none;
+    color: #000;
+    display: inline-block;
+    height: 34px;
+    line-height: 34px;
+}
+header #shopMenu li a:hover {
+    color: #ce2029;
+}
+header #topPhone {
+    margin-top: 20px;
+}
+header .cartLink {
+    margin-top: 18px;
+}
+.cartLink {
+    background: #8bb52c;
+    color: #fff;
+    border: none!important;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    width: 32px;
+    height: 32px;
+    padding-left: 9px;
+    line-height: 32px;
+}
+.cartLink:hover {
+    background: #8bb52c!important;
+    color: #fff!important;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.small, small {
+    font-size: 85%!important;
+}
+.head-fix-sticky{
+    padding: 0;
+}
+.bg-light-grey{
+    background-color: #f8f8f8;
+}
 body {
     min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    font-size: 14px!important;
+    line-height: 1.42857143!important;
+    color: #333!important;
+    background-color: #fff!important;
+
 }
 
 footer {
     /* Опустить в самый низ */
-    margin-top: auto;
+    /*margin-top: auto;*/
+    background: #ce2029;
+    color: rgba(255,255,255,.8);
+    margin-top: 100px;
+    padding: 80px 0 60px 0;
+}
+
+.bg-footer{
+  background-color: #ce2029;
 }
