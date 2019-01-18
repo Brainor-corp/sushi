@@ -14,7 +14,7 @@ get_header(); // подключаем header.php ?>
                     <a href="#" class="saleItem" data-toggle="modal" data-target="#modalTopMain1">
                         <span class="cont">
                             <span class="header">Бесплатная&nbsp;доставка при&nbsp;заказе на&nbsp;сумму свыше&nbsp;1&nbsp;000
-                                <span class="rub">Р</span>
+                                <span class=""><i class="fas fa-ruble-sign"></i></span>
                             </span>
                             <span class="description">
                                 <p>В любой район города</p>
@@ -141,11 +141,14 @@ get_header(); // подключаем header.php ?>
 
 
 <section>
+
+</section><div data-spy="scroll" data-target="#list-products">
+    <!--    роллы-->
     <div class="container-fluid">
         <div class="container nav-container">
-            <h2 class="pt-5">Роллы (рубрика)</h2>
+            <h2 class="pt-5" id="rolls">Роллы (рубрика)</h2>
             <div class="row">
-                <?php for ($i = 0; $i < 10; $i++) { ?>
+                <?php for ($i = 0; $i < 16; $i++) { ?>
                     <div class="col-md-3 col-12 shopItem">
                         <div>
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
@@ -154,7 +157,7 @@ get_header(); // подключаем header.php ?>
                         <div class="caption">
                             <h4>Аляска</h4>
                             <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>
-                            <div class="price">239 <span class="rub">Р</span></div>
+                            <div class="price">239 <span class="rub"><i class="fas fa-ruble-sign"></i></span></div>
                         </div>
                     </div>
                 <?php } ?>
@@ -162,5 +165,76 @@ get_header(); // подключаем header.php ?>
 
         </div>
     </div>
-</section>
+    <!--    роллы-->
+    <!--    суши-->
+    <div class="container-fluid">
+        <div class="container nav-container">
+            <h2 class="pt-5" id="sushi">Суши (рубрика)</h2>
+            <div class="row">
+                <?php for ($i = 0; $i < 4; $i++) { ?>
+                    <div class="col-md-3 col-12 shopItem">
+                        <div>
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
+                                 alt="">
+                        </div>
+                        <div class="caption">
+                            <h4>Аляска</h4>
+                            <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>
+                            <div class="price">239 <span class="rub"><i class="fas fa-ruble-sign"></i></span></div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+
+        </div>
+    </div>
+    <!--    суши-->
+    <!--    наборы-->
+    <div class="container-fluid">
+        <div class="container nav-container">
+            <h2 class="pt-5" id="combinations">Наборы (рубрика)</h2>
+            <div class="row">
+                <?php for ($i = 0; $i < 4; $i++) { ?>
+                    <div class="col-md-3 col-12 shopItem">
+                        <div>
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
+                                 alt="">
+                        </div>
+                        <div class="caption">
+                            <h4>Аляска</h4>
+                            <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>
+                            <div class="price">239 <span class="rub"><i class="fas fa-ruble-sign"></i></span></div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+
+        </div>
+    </div>
+    <!--    наборы-->
+    <!--    напитки-->
+    <div class="container-fluid">
+        <div class="container nav-container">
+            <h2 class="pt-5" id="drinks">Напитки (рубрика)</h2>
+            <div class="row">
+                <?php for ($i = 0; $i < 4; $i++) { ?>
+                    <div class="col-md-3 col-12 shopItem">
+                        <div>
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
+                                 alt="">
+                        </div>
+                        <div class="caption">
+                            <h4>Аляска</h4>
+                            <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>
+                            <div class="price">239 <span class="rub"><i class="fas fa-ruble-sign"></i></span></div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+
+        </div>
+    </div>
+    <!--    напитки-->
+</div>
+
 <?php get_footer(); // подключаем footer.php ?>

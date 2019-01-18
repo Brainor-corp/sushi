@@ -16,7 +16,11 @@
             </div>
 		</div>
 	</footer>
-<?php wp_footer(); // необходимо для работы плагинов и функционала  ?>
 
+<?php wp_footer(); // необходимо для работы плагинов и функционала  ?>
+<script src="<?php echo get_template_directory_uri(); ?>/plugins/slide-menu/vendor/jquery/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/plugins/slide-menu/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/plugins/mmenu/dist/jquery.mmenu.all.js"></script>
+</div>
 </body>
 </html>

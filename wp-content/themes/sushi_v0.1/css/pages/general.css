@@ -16,7 +16,7 @@ header {
     padding-top: 20px;
     position: relative;
 }
-header #shopMenu {
+header .shopMenu {
     margin-left: -20px;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -24,22 +24,22 @@ header #shopMenu {
     letter-spacing: .1em;
     font-weight: 700;
 }
-header #shopMenu li {
+header .shopMenu li {
     margin: 0 0 0 15px;
     padding: 10px 5px;
     border-bottom: 2px solid transparent;
 }
-#shopMenu li a {
+.shopMenu li a {
     border: none;
     color: #000;
     display: inline-block;
     height: 34px;
     line-height: 34px;
 }
-header #shopMenu li a:hover {
+header .shopMenu li a:hover {
     color: #ce2029;
 }
-header #topPhone {
+header .topPhone {
     margin-top: 20px;
 }
 header .cartLink {
@@ -75,6 +75,58 @@ header .cartLink {
 }
 .bg-light-grey{
     background-color: #f8f8f8;
+}
+.mob-menu-logo{
+    height: 40px;
+}
+.iMenu {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+.iMenu .rowMenu .cartLink {
+    position: absolute;
+    right: -5px;
+    top: 6px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    text-align: center;
+    background: 0 0!important;
+    color: #8bb52c!important;
+    font-size: 18px;
+}
+.iMenu .rowMenu a.menu img {
+    height: 40px;
+}
+.iMenu .rowMenu {
+    position: relative;
+    height: 50px;
+}
+.iMenu .rowMenu a.menu {
+    position: relative;
+    height: 40px;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+.iMenu .rowMenu .cartLink {
+    position: absolute;
+    right: -5px;
+    top: 6px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    text-align: center;
+    background: 0 0!important;
+    color: #8bb52c!important;
+    font-size: 18px;
 }
 body {
     min-height: 100vh;
