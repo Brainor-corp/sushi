@@ -5,9 +5,15 @@
  * @subpackage sushi_v0.1
  */
 get_header(); // подключаем header.php ?>
+<div class="container-fluid d-md-none d-block">
+    <div class="container nav-container">
+        <?php echo do_shortcode('[rev_slider alias="mobile vidgets"]')?>
+    </div>
+</div>
 
 <section id="sale" class="saleRama">
-    <div class="container-fluid">
+
+    <div class="container-fluid d-md-block d-none">
         <div class="container nav-container">
             <div class="row mb-5">
                 <div class="col-md-4 col-12">
@@ -149,7 +155,7 @@ get_header(); // подключаем header.php ?>
             <h2 class="pt-5" id="rolls">Роллы (рубрика)</h2>
             <div class="row">
                 <?php for ($i = 0; $i < 16; $i++) { ?>
-                    <div class="col-md-3 col-12 shopItem">
+                    <div class="col-lg-3 col-md-4 col-6 shopItem">
                         <div>
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
                                  alt="">
@@ -172,7 +178,7 @@ get_header(); // подключаем header.php ?>
             <h2 class="pt-5" id="sushi">Суши (рубрика)</h2>
             <div class="row">
                 <?php for ($i = 0; $i < 4; $i++) { ?>
-                    <div class="col-md-3 col-12 shopItem">
+                    <div class="col-lg-3 col-md-4 col-6 shopItem">
                         <div>
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
                                  alt="">
@@ -195,7 +201,7 @@ get_header(); // подключаем header.php ?>
             <h2 class="pt-5" id="combinations">Наборы (рубрика)</h2>
             <div class="row">
                 <?php for ($i = 0; $i < 4; $i++) { ?>
-                    <div class="col-md-3 col-12 shopItem">
+                    <div class="col-lg-3 col-md-4 col-6 shopItem">
                         <div>
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
                                  alt="">
@@ -218,7 +224,7 @@ get_header(); // подключаем header.php ?>
             <h2 class="pt-5" id="drinks">Напитки (рубрика)</h2>
             <div class="row">
                 <?php for ($i = 0; $i < 4; $i++) { ?>
-                    <div class="col-md-3 col-12 shopItem">
+                    <div class="col-lg-3 col-md-4 col-6 shopItem">
                         <div>
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
                                  alt="">

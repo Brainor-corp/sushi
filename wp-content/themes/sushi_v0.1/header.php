@@ -60,8 +60,8 @@
                     <a href="#drinks" class="anchor">Напитки</a>
                 </li>
                 <li id="menuInfo">
-                    <p class="menuPhone p-4">
-                        <strong>(495) 800-08-88</strong><br><i class="fa fa-clock-o"></i> 11:00-24:00
+                    <p class="menuPhone p-5">
+                        <strong>(495) 800-08-88</strong><br><i class="far fa-clock"></i> 11:00-24:00
                     </p>
                     <p class="aboutDelivery">
                     </p>
