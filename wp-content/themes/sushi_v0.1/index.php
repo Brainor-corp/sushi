@@ -5,15 +5,15 @@
  * @subpackage sushi_v0.1
  */
 get_header(); // подключаем header.php ?>
-<div class="container-fluid d-md-none d-block">
+<div class="container-fluid d-lg-none d-block">
     <div class="container nav-container">
-        <?php echo do_shortcode('[rev_slider alias="mobile vidgets"]')?>
+        owl carousel
     </div>
 </div>
 
 <section id="sale" class="saleRama">
 
-    <div class="container-fluid d-md-block d-none">
+    <div class="container-fluid d-lg-block d-none">
         <div class="container nav-container">
             <div class="row mb-5">
                 <div class="col-md-4 col-12">
@@ -151,8 +151,9 @@ get_header(); // подключаем header.php ?>
 </section><div data-spy="scroll" data-target="#list-products">
     <!--    роллы-->
     <div class="container-fluid">
-        <div class="container nav-container">
-            <h2 class="pt-5" id="rolls">Роллы (рубрика)</h2>
+        <div class="container nav-container" style="position: relative; overflow: hidden">
+            <div style="position: absolute; top: -50px" id="rolls"></div>
+            <h2 class="pt-5">Роллы (рубрика)</h2>
             <div class="row">
                 <?php for ($i = 0; $i < 16; $i++) { ?>
                     <div class="col-lg-3 col-md-4 col-6 shopItem">
@@ -174,8 +175,9 @@ get_header(); // подключаем header.php ?>
     <!--    роллы-->
     <!--    суши-->
     <div class="container-fluid">
-        <div class="container nav-container">
-            <h2 class="pt-5" id="sushi">Суши (рубрика)</h2>
+        <div class="container nav-container" style="position: relative; overflow: hidden">
+            <div style="position: absolute; top: -50px" id="sushi"></div>
+            <h2 class="pt-5">Суши (рубрика)</h2>
             <div class="row">
                 <?php for ($i = 0; $i < 4; $i++) { ?>
                     <div class="col-lg-3 col-md-4 col-6 shopItem">
@@ -197,8 +199,9 @@ get_header(); // подключаем header.php ?>
     <!--    суши-->
     <!--    наборы-->
     <div class="container-fluid">
-        <div class="container nav-container">
-            <h2 class="pt-5" id="combinations">Наборы (рубрика)</h2>
+        <div class="container nav-container" style="position: relative; overflow: hidden">
+            <div style="position: absolute; top: -50px" id="combinations"></div>
+            <h2 class="pt-5">Наборы (рубрика)</h2>
             <div class="row">
                 <?php for ($i = 0; $i < 4; $i++) { ?>
                     <div class="col-lg-3 col-md-4 col-6 shopItem">
@@ -220,8 +223,9 @@ get_header(); // подключаем header.php ?>
     <!--    наборы-->
     <!--    напитки-->
     <div class="container-fluid">
-        <div class="container nav-container">
-            <h2 class="pt-5" id="drinks">Напитки (рубрика)</h2>
+        <div class="container nav-container" style="position: relative; overflow: hidden">
+            <div style="position: absolute; top: -50px" id="drinks"></div>
+            <h2 class="pt-5">Напитки (рубрика)</h2>
             <div class="row">
                 <?php for ($i = 0; $i < 4; $i++) { ?>
                     <div class="col-lg-3 col-md-4 col-6 shopItem">

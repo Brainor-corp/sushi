@@ -36,7 +36,7 @@
 
 
 
-    <div class="d-md-none d-block container-fluid head-fix">
+    <div class="d-lg-none d-block container-fluid head-fix">
         <div class="header iMenu visible-xs mm-fixed-top">
             <div class="container-fluid">
                 <div class="rowMenu">
@@ -70,7 +70,7 @@
         </nav>
     </div>
     <div>
-        <header id="top" class="d-md-block d-none">
+        <header id="top" class="d-lg-block d-none">
             <div class="container-fluid bg-light-grey head-fix" id="header-fixed">
                 <div class="container nav-container">
                     <div class="row">
