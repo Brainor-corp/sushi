@@ -5,23 +5,23 @@
  * @subpackage sushi_v0.1
  */
 ?>
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<?php $args = array( // опции для вывода нижнего меню, чтобы они работали, меню должно быть создано в админке
-						'theme_location' => 'bottom', // идентификатор меню, определен в register_nav_menus() в function.php
-						'container'=> false, // обертка списка, false - это ничего
-						'menu_class' => 'nav nav-pills bottom-menu', // класс для ul
-				  		'menu_id' => 'bottom-nav', // id для ul
-				  		'fallback_cb' => false
-				  	);
-					wp_nav_menu($args); // выводим нижние меню
-					?>
-				</div>
-			</div>
+	<footer id="cart">
+		<div class="container-fluid bg-footer">
+			<div class="container nav-container">
+                <div class="row">
+                    <div class="col-12 text-white">
+                        <h1>Тут будет выводиться цена заказа</h1>
+                    </div>
+                </div>
+            </div>
 		</div>
 	</footer>
+
 <?php wp_footer(); // необходимо для работы плагинов и функционала  ?>
+<script src="<?php echo get_template_directory_uri(); ?>/plugins/slide-menu/vendor/jquery/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/plugins/slide-menu/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/plugins/mmenu/dist/jquery.mmenu.all.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+</div>
 </body>
 </html>
