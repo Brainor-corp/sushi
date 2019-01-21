@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/main-page.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/main-page-media.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/general.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/general-media.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/plugins/mmenu/dist/jquery.mmenu.all.css">
     <link href="<?php echo get_template_directory_uri(); ?>/plugins/slide-menu/css/simple-sidebar.css" rel="stylesheet">
     <link href="<?php echo get_template_directory_uri(); ?>/plugins/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
@@ -105,7 +106,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-1 text-right">
-                                    <a href="#cart" class="cartLink" id="cartLink" title="Корзина"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="#cart" class="cartLink anchor" id="cartLink" title="Корзина"><i class="fa fa-shopping-cart"></i></a>
                                 </div>
                             </div>
                         </div>

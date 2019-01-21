@@ -12,7 +12,7 @@ get_header(); // подключаем header.php ?>
                 <a href="#" class="saleItem" data-toggle="modal" data-target="#modalTopMain1">
                     <span class="cont">
                         <span class="header">
-                            Бесплатная&nbsp;доставка при&nbsp;заказе на&nbsp;сумму свыше&nbsp;1&nbsp;000
+                            Бесплатная доставка при заказе на сумму свыше 1 000
                             <span class=""><i class="fas fa-ruble-sign"></i></span>
                         </span>
                         <span class="description">
@@ -20,7 +20,7 @@ get_header(); // подключаем header.php ?>
                         </span>
                     </span>
                     <span class="img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-item1.jpg" class="img-responsive" alt="Бесплатная&nbsp;доставка при&nbsp;заказе на&nbsp;сумму свыше&nbsp;1&nbsp;000 <span class=&quot;rub&quot;>Р</span>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-item1.jpg" class="img-responsive" alt="Бесплатная доставка при заказе на сумму свыше 1 000 <span class=&quot;rub&quot;>Р</span>">
                     </span>
                 </a>
             </div>
@@ -33,7 +33,7 @@ get_header(); // подключаем header.php ?>
                         </span>
                     </span>
                     <span class="img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-item2.jpg" class="img-responsive" alt="Бесплатная&nbsp;доставка при&nbsp;заказе на&nbsp;сумму свыше&nbsp;1&nbsp;000 <span class=&quot;rub&quot;>Р</span>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-item2.jpg" class="img-responsive" alt="Бесплатная доставка при заказе на сумму свыше 1 000 <span class=&quot;rub&quot;>Р</span>">
                     </span>
                 </a>
             </div>
@@ -46,7 +46,7 @@ get_header(); // подключаем header.php ?>
                         </span>
                     </span>
                     <span class="img">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-item3.jpg" class="img-responsive" alt="Бесплатная&nbsp;доставка при&nbsp;заказе на&nbsp;сумму свыше&nbsp;1&nbsp;000 <span class=&quot;rub&quot;>Р</span>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/top-item3.jpg" class="img-responsive" alt="Бесплатная доставка при заказе на сумму свыше 1 000 <span class=&quot;rub&quot;>Р</span>">
                     </span>
                 </a>
             </div>
@@ -61,7 +61,7 @@ get_header(); // подключаем header.php ?>
                     <a href="#" class="saleItem" data-toggle="modal" data-target="#modalTopMain1">
                         <span class="cont">
                             <span class="header">
-                                Бесплатная&nbsp;доставка при&nbsp;заказе на&nbsp;сумму свыше&nbsp;1&nbsp;000
+                                Бесплатная доставка при заказе на сумму свыше 1 000
                                 <span class=""><i class="fas fa-ruble-sign"></i></span>
                             </span>
                             <span class="description">
@@ -69,7 +69,7 @@ get_header(); // подключаем header.php ?>
                             </span>
                         </span>
                         <span class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/top-item1.jpg" class="img-responsive" alt="Бесплатная&nbsp;доставка при&nbsp;заказе на&nbsp;сумму свыше&nbsp;1&nbsp;000 <span class=&quot;rub&quot;>Р</span>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/top-item1.jpg" class="img-responsive" alt="Бесплатная доставка при заказе на сумму свыше 1 000 <span class=&quot;rub&quot;>Р</span>">
                         </span>
                     </a>
                 </div>
@@ -82,7 +82,7 @@ get_header(); // подключаем header.php ?>
                             </span>
                         </span>
                         <span class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/top-item2.jpg" class="img-responsive" alt="Бесплатная&nbsp;доставка при&nbsp;заказе на&nbsp;сумму свыше&nbsp;1&nbsp;000 <span class=&quot;rub&quot;>Р</span>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/top-item2.jpg" class="img-responsive" alt="Бесплатная доставка при заказе на сумму свыше 1 000 <span class=&quot;rub&quot;>Р</span>">
                         </span>
                     </a>
                 </div>
@@ -95,7 +95,7 @@ get_header(); // подключаем header.php ?>
                             </span>
                         </span>
                         <span class="img">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/top-item3.jpg" class="img-responsive" alt="Бесплатная&nbsp;доставка при&nbsp;заказе на&nbsp;сумму свыше&nbsp;1&nbsp;000 <span class=&quot;rub&quot;>Р</span>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/top-item3.jpg" class="img-responsive" alt="Бесплатная доставка при заказе на сумму свыше 1 000 <span class=&quot;rub&quot;>Р</span>">
                         </span>
                     </a>
 
@@ -110,6 +110,23 @@ get_header(); // подключаем header.php ?>
 <section>
 
 </section><div data-spy="scroll" data-target="#list-products">
+
+
+
+
+<!--    загрузчик при добавлении в корзину-->
+    <div id="ajaxLoader d-none">
+        <div class="loaderRing">
+            <div class="loaderHolder">
+                <div class="loaderBall"></div>
+            </div>
+        </div>
+    </div>
+<!--    загрузчик при добавлении в корзину-->
+
+
+
+
     <!--    роллы-->
     <div class="container-fluid">
         <div class="container nav-container" style="position: relative; overflow: hidden">
@@ -121,6 +138,7 @@ get_header(); // подключаем header.php ?>
                         <div>
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
                                  alt="">
+                            <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
                         </div>
                         <div class="caption">
                             <h4>Аляска</h4>
@@ -133,6 +151,7 @@ get_header(); // подключаем header.php ?>
         </div>
     </div>
     <!--    роллы-->
+
     <!--    суши-->
     <div class="container-fluid">
         <div class="container nav-container" style="position: relative; overflow: hidden">
@@ -144,6 +163,7 @@ get_header(); // подключаем header.php ?>
                         <div>
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
                                  alt="">
+                            <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
                         </div>
                         <div class="caption">
                             <h4>Аляска</h4>
@@ -157,6 +177,7 @@ get_header(); // подключаем header.php ?>
         </div>
     </div>
     <!--    суши-->
+
     <!--    наборы-->
     <div class="container-fluid">
         <div class="container nav-container" style="position: relative; overflow: hidden">
@@ -168,6 +189,7 @@ get_header(); // подключаем header.php ?>
                         <div>
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
                                  alt="">
+                            <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
                         </div>
                         <div class="caption">
                             <h4>Аляска</h4>
@@ -181,6 +203,7 @@ get_header(); // подключаем header.php ?>
         </div>
     </div>
     <!--    наборы-->
+
     <!--    напитки-->
     <div class="container-fluid">
         <div class="container nav-container" style="position: relative; overflow: hidden">
@@ -192,6 +215,7 @@ get_header(); // подключаем header.php ?>
                         <div>
                             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
                                  alt="">
+                            <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
                         </div>
                         <div class="caption">
                             <h4>Аляска</h4>
@@ -205,18 +229,6 @@ get_header(); // подключаем header.php ?>
     </div>
     <!--    напитки-->
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--modals-->

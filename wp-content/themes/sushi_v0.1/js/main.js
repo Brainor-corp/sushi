@@ -69,6 +69,13 @@ $(document).ready(function () {
                 items:1,
             }
         }
-    })
+    });
+
+    $('.addToCart').on("click", function (){
+        $('#cartLink').addClass('cartLink-big');
+        setTimeout (function(){
+            $('#cartLink').removeClass('cartLink-big');
+        }, 350);
+    });
 
 });
