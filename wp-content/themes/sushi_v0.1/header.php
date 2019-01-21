@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/main-page.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/main-page-media.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/general.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/general-media.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/plugins/mmenu/dist/jquery.mmenu.all.css">
     <link href="<?php echo get_template_directory_uri(); ?>/plugins/slide-menu/css/simple-sidebar.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/plugins/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
 
 	<?php /* Все скрипты и стили теперь подключаются в functions.php */ ?>
 
@@ -76,8 +78,8 @@
                     <div class="row">
                         <div class="col-12 bg-light-grey">
                             <div class="row shopMenu" id="shopMenu">
-                                <div class="col-sm-9" id="list-products" >
-                                    <ul class="list-inline mb-2">
+                                <div class="col-sm-9 list-group" id="list-products">
+                                    <ul class="list-inline mb-0">
                                         <li class="logo list-inline-item">
                                             <a href="#top" class="anchor" title="Сайт службы доставки суши">
                                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" height="50" alt="Сайт службы доставки суши">
@@ -104,7 +106,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-1 text-right">
-                                    <a href="#cart" class="cartLink" id="cartLink" title="Корзина"><i class="fa fa-shopping-cart"></i></a>
+                                    <a href="#cart" class="cartLink anchor" id="cartLink" title="Корзина"><i class="fa fa-shopping-cart"></i></a>
                                 </div>
                             </div>
                         </div>

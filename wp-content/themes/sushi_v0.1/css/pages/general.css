@@ -67,6 +67,14 @@ header .cartLink {
     -o-transform: scale(1.2);
     transform: scale(1.2);
 }
+.cartLink-big {
+    background: #8bb52c!important;
+    color: #fff!important;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
 .small, small {
     font-size: 85%!important;
 }
@@ -152,4 +160,158 @@ footer {
 
 .bg-footer{
   background-color: #ce2029;
+}
+#makeCheckOut .checkOut .cnt {
+    padding: 25px 30px 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+    border: 1px dashed rgba(255,255,255,.5);
+    background: #ce2029!important;
+}
+#makeCheckOut .checkOut .total {
+    color: #fff;
+    font-size: 30px;
+}
+#makeCheckOut .checkOut .checkOutBtn {
+    margin-top: 10px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+#makeCheckOut .padTable a.del {
+    display: inline-block;
+    position: relative;
+    border: none;
+    color: rgba(255,255,255,.5);
+}
+#makeCheckOut .padTable a.del:hover {
+    color: rgba(255,255,255,.8);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+footer .footerBtn {
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+    border-color: rgba(255,255,255,.8);
+}
+.input-group-addon:first-child {
+    border-right: 0;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child>.btn, .input-group-btn:first-child>.btn-group>.btn, .input-group-btn:first-child>.dropdown-toggle, .input-group-btn:last-child>.btn-group:not(:last-child)>.btn, .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn {
+    /* height: 30px; */
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    /* border-radius: 3px; */
+    /* z-index: 26; */
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.caption{
+    cursor: pointer;
+}
+.valI{
+    width: 50px!important;
+}
+#ajaxLoader {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1000;
+}
+#ajaxLoader .loaderRing {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 3px solid #000;
+    border-radius: 32px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: 1s linear 0s normal none infinite running rot;
+    -webkit-animation: 1s linear 0s normal none infinite running rot;
+
+}
+
+@keyframes balMove {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes balMove {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#ajaxLoader .loaderRing .loaderHolder {
+    position: absolute;
+    line-height: 1;
+    width: 9px;
+    height: 26px;
+    -webkit-animation: balMove 1.3s linear normal none infinite running;
+    -moz-animation: balMove 1.3s linear normal none infinite running;
+    animation: balMove 1.3s  linear normal none infinite running;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#ajaxLoader .loaderRing .loaderHolder .loaderBall {
+    position: absolute;
+    left: 0;
+    top: -7px;
+    width: 13px;
+    height: 13px;
+    background: #ce2029;
+    border-radius: 11px;
+}
+header #shopMenu li.active {
+    border-bottom: 2px solid #ce2029;
+}
+
+.logo.active {
+    border-bottom: unset !important;
 }
