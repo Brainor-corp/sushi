@@ -56,7 +56,7 @@
     transition: all 1s ease-in-out;
 }
 .rub {
-    font-family: ALSRubl-Arial,"Helvetica Neue",Helvetica,Arial,sans-serif!important;
+    height: 10px;
 }
 .img-responsive{
     display: block;

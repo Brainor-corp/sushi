@@ -308,3 +308,10 @@ footer .footerBtn {
     background: #ce2029;
     border-radius: 11px;
 }
+header #shopMenu li.active {
+    border-bottom: 2px solid #ce2029;
+}
+
+.logo.active {
+    border-bottom: unset !important;
+}
