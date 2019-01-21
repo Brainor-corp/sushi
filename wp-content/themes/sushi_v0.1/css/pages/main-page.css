@@ -108,6 +108,16 @@ a:hover .img {
     margin: 4px 0 0 0;
     padding: 0;
 }
+.shopItem h4:hover {
+    color: #ce2029;
+    font-size: 14px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: none;
+    margin: 4px 0 0 0;
+    padding: 0;
+}
 .shopItem .price {
     margin: 3px 0 0 0;
     color: #ce2029;
@@ -115,3 +125,34 @@ a:hover .img {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
 }
+#owl-main .item{
+    padding: 1px;
+}
+.shopItem:hover .cart2 {
+    top: 120px;
+    opacity: 1;
+}
+
+.shopItem .cart2 {
+    padding: 10px;
+    position: absolute;
+    top: 140px;
+    z-index: 20;
+    left: 50%;
+    margin-left: -15px;
+    background: #ce2029;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+
+
+
+
+

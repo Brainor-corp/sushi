@@ -42,4 +42,40 @@ $(document).ready(function () {
 
     });
 
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        center:true,
+        dots:true,
+        navigation:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        margin:10,
+        pagination : true,
+        items : 1,
+        itemsDesktop : false,
+        itemsDesktopSmall : false,
+        itemsTablet: false,
+        itemsMobile : false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:1,
+            },
+            767:{
+                items:1,
+            }
+        }
+    });
+
+    $('.addToCart').on("click", function (){
+        $('#cartLink').addClass('cartLink-big');
+        setTimeout (function(){
+            $('#cartLink').removeClass('cartLink-big');
+        }, 350);
+    });
+
 });
