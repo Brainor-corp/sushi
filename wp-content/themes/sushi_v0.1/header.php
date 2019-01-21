@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/pages/general.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/plugins/mmenu/dist/jquery.mmenu.all.css">
     <link href="<?php echo get_template_directory_uri(); ?>/plugins/slide-menu/css/simple-sidebar.css" rel="stylesheet">
+    <link href="<?php echo get_template_directory_uri(); ?>/plugins/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
 
 	<?php /* Все скрипты и стили теперь подключаются в functions.php */ ?>
 

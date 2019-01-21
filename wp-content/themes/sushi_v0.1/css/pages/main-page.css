@@ -115,3 +115,6 @@ a:hover .img {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
 }
+#owl-main .item{
+    padding: 1px;
+}
