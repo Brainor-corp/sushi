@@ -13,6 +13,8 @@
             <div id="makeCheckOut">
                 <form action="/" method="post">
                     <div class="row">
+
+
                         <div class="col-lg-8 col-12">
                             <div class="padTable">
                                 <table class="table table-responsive">
@@ -110,6 +112,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <div class="col-lg-4 col-12">
                             <div class="checkOut stickyeah" data-stickyeah-offset="96" data-stickyeah-push="sub" data-stickyeah-class="open">
                                 <div class="cnt">
@@ -119,22 +123,93 @@
                                     </div>
                                     <div class="checkOutBtn">
                                         <div class="control-group form-group">
+                                            <label class="control-label">Фамилия и имя</label>
+                                            <div class="controls">
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="Иван Иванов" name="phone" required>
+                                                </div>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group form-group">
+                                            <label class="control-label">Название отеля</label>
+                                            <div class="controls">
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="Название отеля" required>
+                                                </div>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group form-group">
+                                            <label class="control-label">Местоположение</label>
+                                            <div class="controls">
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="Местоположение">
+                                                </div>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group form-group">
+                                            <label class="control-label">E-mail</label>
+                                            <div class="controls">
+                                                <div class="input-group input-group-sm">
+                                                    <input type="e-mail" size="30" class="form-control form-control-sm" placeholder="example@mail.com" required>
+                                                </div>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group form-group">
                                             <label class="control-label">Телефон</label>
                                             <div class="controls">
                                                 <div class="input-group input-group-sm">
                                                     <span class="input-group-addon">+7</span>
-                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="9124785527" name="phone" required="required" data-bv-message="Обязательно укажите телефон" data-bv-between="true" data-bv-between-inclusive="true" data-bv-between-message=" " data-bv-between-min="1000000000" data-bv-between-max="9999999999" maxlength="10" pattern="^[0-9]+$" aria-invalid="false" data-bv-field="phone">
+                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="9124785527" required>
                                                 </div>
                                                 <div class="help-block"></div>
                                             </div>
-                                            <small class="help-block" data-bv-validator="between" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;"> </small><small class="help-block" data-bv-validator="notEmpty" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">Обязательно укажите телефон</small><small class="help-block" data-bv-validator="regexp" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">Обязательно укажите телефон</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">Обязательно укажите телефон</small></div>
+                                        </div>
                                         <div class="control-group form-group">
-                                            <label class="control-label">Адрес доставки:</label>
+                                            <label class="control-label">Количество человек</label>
                                             <div class="controls">
-                                                <textarea name="address" placeholder="Адрес доставки" class="form-control form-control-sm" rows="4" required="required" data-bv-message="Обязательно укажите адрес доставки" data-bv-field="address"></textarea>
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="укажите количество человек" required>
+                                                </div>
                                                 <div class="help-block"></div>
                                             </div>
-                                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="address" data-bv-result="NOT_VALIDATED" style="display: none;">Обязательно укажите адрес доставки</small></div>
+                                        </div>
+                                        <div class="control-group form-group">
+                                            <label class="control-label">Примечание к заказу:</label>
+                                            <div class="controls">
+                                                <div class="input-group input-group-sm">
+                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="Примечание" required>
+                                                </div>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
+                                        <div class="control-group form-group">
+                                            <label class="control-label">Через что позвонить:</label>
+                                            <div class="controls">
+                                                <select name="address" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="control-group form-group">
+                                            <label class="control-label">Доставка:</label>
+                                            <div class="controls">
+                                                <select name="address" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                                <div class="help-block"></div>
+                                            </div>
+                                        </div>
                                         <br>
                                         <input type="submit" name="checkout" class="btn btn-sm footerBtn" onclick="return $.checkOut('/', '#makeCheckOutFull')" value="Оформить заказ">
                                     </div>
