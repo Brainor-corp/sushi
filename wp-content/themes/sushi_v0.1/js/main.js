@@ -103,8 +103,10 @@ $(document).ready(function () {
 
     $('.addToCart').on("click", function (){
         $('#cartLink').addClass('cartLink-big');
+        $('#cartLinkSmall').addClass('cartLink-big');
         setTimeout (function(){
             $('#cartLink').removeClass('cartLink-big');
+            $('#cartLinkSmall').removeClass('cartLink-big');
         }, 350);
     });
 
