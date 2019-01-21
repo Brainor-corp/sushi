@@ -32,14 +32,14 @@
 
                                     <tr>
                                         <td class="col-6">Мохито</td>
-                                        <td class="text-right">116 <span class="rub">Р</span></td>
+                                        <td class="text-right">116 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></td>
                                         <td class="col-sm-1">
                                             <div class="form-group">
                                                 <input type="number" size="3" class="form-control form-control-sm valI" name="quantity_5776" id="quantity_5776" value="1">
                                             </div>
                                         </td>
                                         <td class="text-right nobr">
-                                            <strong>116 <span class="rub">Р</span></strong>
+                                            <strong>116 <span class="rub"><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></strong>
                                         </td>
                                         <td class="text-center">
                                             <a href=" #" class="del" title="Удалить товар из корзины">
@@ -51,14 +51,14 @@
 
                                     <tr>
                                         <td class="col-6">Гранатовый лимонад</td>
-                                        <td class="text-right">116 <span class="rub">Р</span></td>
+                                        <td class="text-right">116 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></td>
                                         <td class="col-sm-1">
                                             <div class="form-group">
                                                 <input type="number" size="3" class="form-control form-control-sm valI" name="quantity_5776" id="quantity_5776" value="1">
                                             </div>
                                         </td>
                                         <td class="text-right nobr">
-                                            <strong>116 <span class="rub">Р</span></strong>
+                                            <strong>116 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></strong>
                                         </td>
                                         <td class="text-center">
                                             <a href=" #" class="del" title="Удалить товар из корзины">
@@ -70,14 +70,14 @@
 
                                     <tr>
                                         <td class="col-6">Арбузный сок</td>
-                                        <td class="text-right">112 <span class="rub">Р</span></td>
+                                        <td class="text-right">112 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></td>
                                         <td class="col-sm-1">
                                             <div class="form-group">
                                                 <input type="number" size="4" class="form-control form-control-sm valI" name="quantity_5776" id="quantity_5776" value="1">
                                             </div>
                                         </td>
                                         <td class="text-right nobr">
-                                            <strong>112 <span class="rub">Р</span></strong>
+                                            <strong>112 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></strong>
                                         </td>
                                         <td class="text-center">
                                             <a href=" #" class="del" title="Удалить товар из корзины">
@@ -94,7 +94,7 @@
                                         <th class="text-right">Итого:</th>
                                         <th></th>
                                         <th class="text-right nobr">
-                                            <strong>344<span class="rub">Р</span></strong>
+                                            <strong>344 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></strong>
                                         </th>
                                         <th></th>
                                     </tr>
@@ -119,7 +119,7 @@
                                 <div class="cnt">
                                     <div>Общая стоимость</div>
                                     <div class="total">
-                                        <strong>116 <span class="rub">Р</span></strong>
+                                        <strong>116 <span class="rub"><i class="fas fa-ruble-sign"></i></span></strong>
                                     </div>
                                     <div class="checkOutBtn">
                                         <div class="control-group form-group">

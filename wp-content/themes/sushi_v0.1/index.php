@@ -109,7 +109,8 @@ get_header(); // подключаем header.php ?>
 
 <section>
 
-</section><div data-spy="scroll" data-target="#list-products">
+</section>
+<div data-spy="scroll" data-target="#list-products" id="list-products-spy">
 
 
 
@@ -143,7 +144,7 @@ get_header(); // подключаем header.php ?>
                         <div class="caption">
                             <h4>Аляска</h4>
                             <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>
-                            <div class="price">239 <span class="rub"><i class="fas fa-ruble-sign"></i></span></div>
+                            <div class="price">239 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-red.svg" alt=""></span></div>
                         </div>
                     </div>
                 <?php } ?>
@@ -168,7 +169,7 @@ get_header(); // подключаем header.php ?>
                         <div class="caption">
                             <h4>Аляска</h4>
                             <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>
-                            <div class="price">239 <span class="rub"><i class="fas fa-ruble-sign"></i></span></div>
+                            <div class="price">239 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-red.svg" alt=""></span></div>
                         </div>
                     </div>
                 <?php } ?>
@@ -194,7 +195,7 @@ get_header(); // подключаем header.php ?>
                         <div class="caption">
                             <h4>Аляска</h4>
                             <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>
-                            <div class="price">239 <span class="rub"><i class="fas fa-ruble-sign"></i></span></div>
+                            <div class="price">239 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-red.svg" alt=""></span></div>
                         </div>
                     </div>
                 <?php } ?>
@@ -220,7 +221,7 @@ get_header(); // подключаем header.php ?>
                         <div class="caption">
                             <h4>Аляска</h4>
                             <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>
-                            <div class="price">239 <span class="rub"><i class="fas fa-ruble-sign"></i></span></div>
+                            <div class="price">239 <span><img class="rub" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-red.svg" alt=""></span></div>
                         </div>
                     </div>
                 <?php } ?>
