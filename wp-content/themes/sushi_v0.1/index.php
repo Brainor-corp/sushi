@@ -137,9 +137,13 @@ get_header(); // подключаем header.php ?>
                 <?php for ($i = 0; $i < 16; $i++) { ?>
                     <div class="col-lg-3 col-md-4 col-6 shopItem">
                         <div>
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
-                                 alt="">
+                            <a class="fancybox image" href="<?php echo get_template_directory_uri(); ?>/img/1.jpg">
+                                <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>
+                            </a>
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="">
+
                             <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
+
                         </div>
                         <div class="caption">
                             <h4>Аляска</h4>
@@ -162,8 +166,10 @@ get_header(); // подключаем header.php ?>
                 <?php for ($i = 0; $i < 4; $i++) { ?>
                     <div class="col-lg-3 col-md-4 col-6 shopItem">
                         <div>
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
-                                 alt="">
+                            <a class="fancybox image" href="<?php echo get_template_directory_uri(); ?>/img/1.jpg">
+                                <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>
+                            </a>
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="">
                             <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
                         </div>
                         <div class="caption">
@@ -188,8 +194,10 @@ get_header(); // подключаем header.php ?>
                 <?php for ($i = 0; $i < 4; $i++) { ?>
                     <div class="col-lg-3 col-md-4 col-6 shopItem">
                         <div>
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
-                                 alt="">
+                            <a class="fancybox image" href="<?php echo get_template_directory_uri(); ?>/img/1.jpg">
+                                <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>
+                            </a>
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="">
                             <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
                         </div>
                         <div class="caption">
@@ -214,8 +222,10 @@ get_header(); // подключаем header.php ?>
                 <?php for ($i = 0; $i < 4; $i++) { ?>
                     <div class="col-lg-3 col-md-4 col-6 shopItem">
                         <div>
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg"
-                                 alt="">
+                            <a class="fancybox image" href="<?php echo get_template_directory_uri(); ?>/img/1.jpg">
+                                <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>
+                            </a>
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="">
                             <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
                         </div>
                         <div class="caption">
