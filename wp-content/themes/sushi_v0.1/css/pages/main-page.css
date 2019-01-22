@@ -129,9 +129,9 @@ a:hover .img {
     padding: 1px;
 }
 .shopItem:hover .cart2 {
-    top: 120px;
-    opacity: 1;
-}
+     top: 120px;
+     opacity: 1;
+ }
 
 .shopItem .cart2 {
     padding: 10px;
@@ -141,6 +141,28 @@ a:hover .img {
     left: 50%;
     margin-left: -15px;
     background: #ce2029;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.shopItem:hover .openimg {
+    top: 120px;
+    opacity: 1;
+}
+
+.shopItem .openimg {
+    padding: 10px;
+    position: absolute;
+    top: 140px;
+    z-index: 20;
+    left: 50%;
+    margin-left: -55px;
+    background: #2352ce;
     color: #fff;
     border-radius: 100%;
     font-size: 14px;

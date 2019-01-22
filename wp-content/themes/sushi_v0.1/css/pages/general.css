@@ -315,3 +315,6 @@ header #shopMenu li.active {
 .logo.active {
     border-bottom: unset !important;
 }
+.rub{
+    height: 10px;
+}
