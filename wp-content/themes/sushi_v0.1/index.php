@@ -87,10 +87,12 @@ get_header(); // подключаем header.php ?>
 
 
     <!--    роллы-->
+    <?php	query_posts('cat=2'); // указываем идентификатор вашей рубрики.
+    while (have_posts()) : the_post();?>
     <div class="container-fluid">
         <div class="container nav-container" style="position: relative; overflow: hidden">
             <div style="position: absolute; top: -50px" id="rolls"></div>
-            <h2 class="pt-5">Роллы (рубрика)</h2>
+            <h2 class="pt-5"><?php single_cat_title() ?></h2>
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-6 shopItem">
                     <?php
@@ -115,6 +117,9 @@ get_header(); // подключаем header.php ?>
             </div>
         </div>
     </div>
+    <?php endwhile;
+    wp_reset_query();
+    ?>
     <!--    роллы-->
 
     <!--    суши-->
