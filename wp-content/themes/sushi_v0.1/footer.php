@@ -170,6 +170,17 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">Через что позвонить:</label>
+                                                <div class="controls">
+                                                    <select name="address" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
                                                 <label class="control-label">Количество человек</label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
@@ -182,21 +193,9 @@
                                                 <label class="control-label">Примечание к заказу:</label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
-                                                        <input type="text" size="30" class="form-control form-control-sm" placeholder="Примечание" required>
+                                                        <input type="text" size="30" class="form-control form-control-sm" placeholder="Примечание">
                                                     </div>
                                                     <div class="help-block"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">Через что позвонить:</label>
-                                                <div class="controls">
-                                                    <select name="address" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                    </select>
-
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
@@ -212,34 +211,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <br>
-                                        <input type="submit" name="checkout" class="btn btn-sm footerBtn" onclick="return $.checkOut('/', '#makeCheckOutFull')" value="Оформить заказ">
-                                    </div>
-                                </div>
-                            </div><div class="checkOut stickyeah stickyeah_clone" data-stickyeah-offset="96" data-stickyeah-push="sub" data-stickyeah-class="open" style="visibility: hidden; display: none;">
-                                <div class="cnt">
-                                    <div>Общая стоимость</div>
-                                    <div class="total">
-                                        <strong>116 <span class="ruble-ico">Р</span></strong>
-                                    </div>
-                                    <div class="checkOutBtn">
-                                        <div class="control-group form-group">
-                                            <label class="control-label">Телефон</label>
-                                            <div class="controls">
-                                                <div class="input-group input-group-sm">
-                                                    <span class="input-group-addon">+7</span>
-                                                    <input type="text" size="30" class="form-control" placeholder="9124785527" name="phone" required="required" data-bv-message="Обязательно укажите телефон" data-bv-between="true" data-bv-between-inclusive="true" data-bv-between-message=" " data-bv-between-min="1000000000" data-bv-between-max="9999999999" maxlength="10" pattern="^[0-9]+$" aria-invalid="false" data-bv-field="phone">
-                                                </div>
-                                                <div class="help-block"></div>
-                                            </div>
-                                            <small class="help-block" data-bv-validator="between" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;"> </small><small class="help-block" data-bv-validator="notEmpty" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">Обязательно укажите телефон</small><small class="help-block" data-bv-validator="regexp" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">Обязательно укажите телефон</small><small class="help-block" data-bv-validator="stringLength" data-bv-for="phone" data-bv-result="NOT_VALIDATED" style="display: none;">Обязательно укажите телефон</small></div>
-                                        <div class="control-group form-group">
-                                            <label class="control-label">Адрес доставки:</label>
-                                            <div class="controls">
-                                                <textarea name="address" placeholder="Адрес доставки" class="form-control input-sm" rows="4" required="required" data-bv-message="Обязательно укажите адрес доставки" data-bv-field="address"></textarea>
-                                                <div class="help-block"></div>
-                                            </div>
-                                            <small class="help-block" data-bv-validator="notEmpty" data-bv-for="address" data-bv-result="NOT_VALIDATED" style="display: none;">Обязательно укажите адрес доставки</small></div>
                                         <br>
                                         <input type="submit" name="checkout" class="btn btn-sm footerBtn" onclick="return $.checkOut('/', '#makeCheckOutFull')" value="Оформить заказ">
                                     </div>
