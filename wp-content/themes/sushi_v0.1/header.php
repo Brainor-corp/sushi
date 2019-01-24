@@ -102,7 +102,7 @@
                                 <div class="col-sm-2 text-right">
                                     <div class="topPhone">
                                         <strong>(495) 800-08-88</strong><br>
-                                        <i class="far fa-clock"></i>11:00-24:00
+                                        <i class="far fa-clock"></i> 11:00-24:00
                                     </div>
                                 </div>
                                 <div class="col-sm-1 text-right">
