@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb818464-1f47-4d3c-9890-4ca82ccba987" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +16,9 @@
         <counts>
           <entry key="css" value="174" />
           <entry key="js" value="8" />
-          <entry key="php" value="1123" />
+          <entry key="php" value="1130" />
           <entry key="scss" value="24" />
-          <entry key="txt" value="230" />
+          <entry key="txt" value="270" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -27,8 +26,8 @@
           <entry key="CSS" value="174" />
           <entry key="HTML" value="8" />
           <entry key="JavaScript" value="8" />
-          <entry key="PHP" value="1115" />
-          <entry key="PLAIN_TEXT" value="230" />
+          <entry key="PHP" value="1122" />
+          <entry key="PLAIN_TEXT" value="270" />
           <entry key="SCSS" value="24" />
         </counts>
       </usages-collector>
@@ -50,7 +49,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.opened" value="3" />
@@ -69,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="812">
@@ -78,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="152" column="15" selection-start-line="152" selection-start-column="15" selection-end-line="152" selection-end-column="15" />
+            <state relative-caret-position="1117">
+              <caret line="217" column="34" selection-start-line="217" selection-start-column="34" selection-end-line="217" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -136,7 +135,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/ajax/for-modals.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/ajax/for_modals.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/main-page-media.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/single-product/price.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/single-product/product-thumbnails.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/archive-product.php" />
@@ -149,6 +147,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/loop/price.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php" />
       </list>
     </option>
   </component>
@@ -165,9 +164,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1040" />
+    <option name="x" value="528" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -220,7 +219,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="heade&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/header.php&#10;footer&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/footer.php&#10;main&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/css/pages/main-page-media.css&#10;gene&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/css/pages/general.css&#10;foo&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/footer.php" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gadanie.local" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -261,7 +260,7 @@
       <workItem from="1548048011182" duration="37112000" />
       <workItem from="1548134135600" duration="3631000" />
       <workItem from="1548220462116" duration="10824000" />
-      <workItem from="1548306603303" duration="490000" />
+      <workItem from="1548306603303" duration="1649000" />
     </task>
     <task id="LOCAL-00001" summary="Full hell some shit">
       <created>1548163518695</created>
@@ -298,19 +297,19 @@
       <option name="project" value="LOCAL" />
       <updated>1548232167578</updated>
     </task>
-    <task id="LOCAL-00006" summary="промежуточные изменения, мобильное меню, правки шаки">
-      <created>1547820666455</created>
+    <task id="LOCAL-00006" summary="fix clock in header">
+      <created>1548307198847</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1547820666456</updated>
+      <updated>1548307198847</updated>
     </task>
-    <task id="LOCAL-00007" summary="промежуточные изменения, правки шапки, скриптов, главной, добавлен слайдер">
-      <created>1547829125505</created>
+    <task id="LOCAL-00007" summary="Правки футера">
+      <created>1548307637378</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1547829125505</updated>
+      <updated>1548307637378</updated>
     </task>
     <task id="LOCAL-00008" summary="промежуточные изменения, правки шапки, скриптов, главной, удален слайдер">
       <created>1547832576260</created>
@@ -319,11 +318,11 @@
       <option name="project" value="LOCAL" />
       <updated>1547832576260</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37211000" />
+    <option name="totallyTimeSpent" value="38370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -365,7 +364,9 @@
     <MESSAGE value="Media queries" />
     <MESSAGE value="вывод названия рубрики" />
     <MESSAGE value="вывод названия рубрики + плагин социалок внизу" />
-    <option name="LAST_COMMIT_MESSAGE" value="вывод названия рубрики + плагин социалок внизу" />
+    <MESSAGE value="fix clock in header" />
+    <MESSAGE value="Правки футера" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правки футера" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\OSPanel\domains\sushi.loc</wordpressPath>
@@ -600,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="152" column="15" selection-start-line="152" selection-start-column="15" selection-end-line="152" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -618,6 +612,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
           <caret line="104" column="69" selection-start-line="104" selection-start-column="69" selection-end-line="104" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1117">
+          <caret line="217" column="34" selection-start-line="217" selection-start-column="34" selection-end-line="217" selection-end-column="34" />
         </state>
       </provider>
     </entry>
