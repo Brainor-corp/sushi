@@ -26,7 +26,7 @@
                                 <div>Общая стоимость</div>
                                 <div class="total">
 <!--                                    <strong>--><?php //echo $woocommerce->cart->get_cart_total(); ?><!--</strong>-->
-                                    <div class="cart-collaterals">
+                                    <div class="cart-collaterals" id="cart-total-container">
                                         <?php
                                         /**
                                          * Cart collaterals hook.

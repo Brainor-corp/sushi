@@ -205,4 +205,11 @@ function conditionally_load_woc_js_css(){
 
 add_action( 'wp_enqueue_scripts', 'conditionally_load_woc_js_css' );
 
+function get_cart_total(){
+    do_action( 'woocommerce_cart_collaterals' );
+    wp_die();
+}
+
+add_action( 'wp_ajax_get_cart_total', 'get_cart_total' );
+
 ?>
