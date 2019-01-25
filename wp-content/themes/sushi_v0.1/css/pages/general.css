@@ -240,7 +240,7 @@ footer .footerBtn {
 .valI{
     width: 50px!important;
 }
-#ajaxLoader {
+.ajaxLoader {
     position: fixed;
     width: 32px;
     height: 32px;
@@ -250,8 +250,9 @@ footer .footerBtn {
     right: 0;
     margin: auto;
     z-index: 1000;
+    display: none;
 }
-#ajaxLoader .loaderRing {
+.ajaxLoader .loaderRing {
     position: absolute;
     width: 32px;
     height: 32px;
@@ -284,7 +285,7 @@ footer .footerBtn {
     }
 }
 
-#ajaxLoader .loaderRing .loaderHolder {
+.ajaxLoader .loaderRing .loaderHolder {
     position: absolute;
     line-height: 1;
     width: 9px;
@@ -299,7 +300,7 @@ footer .footerBtn {
     margin: auto;
 }
 
-#ajaxLoader .loaderRing .loaderHolder .loaderBall {
+.ajaxLoader .loaderRing .loaderHolder .loaderBall {
     position: absolute;
     left: 0;
     top: -7px;

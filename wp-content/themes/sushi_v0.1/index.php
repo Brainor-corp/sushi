@@ -74,7 +74,7 @@ get_header(); // подключаем header.php ?>
 
 
 <!--    загрузчик при добавлении в корзину-->
-    <div id="ajaxLoader d-none">
+    <div class="ajaxLoader">
         <div class="loaderRing">
             <div class="loaderHolder">
                 <div class="loaderBall"></div>
@@ -125,7 +125,7 @@ get_header(); // подключаем header.php ?>
                             </a>
                             <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'full'); ?>
                             <img class="img-fluid" src="<?php echo $featured_image[0]; ?>" alt="">
-                            <a href="<?php echo $wcProduct->add_to_cart_url(); ?>">
+                            <a href="<?php echo $wcProduct->add_to_cart_url(); ?>" data-product-id="<?php echo $wcProduct->get_id(); ?>" class="add-to-cart-link">
                                 <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
                             </a>
                         </div>

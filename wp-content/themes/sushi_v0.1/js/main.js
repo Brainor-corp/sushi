@@ -1,4 +1,48 @@
 $(document).ready(function () {
+    function updateCart() {
+        $.ajax({
+            type: 'POST',
+            url: '/wp-admin/admin-ajax.php',
+            data: {
+                action: 'get_shortcode_content',
+                shortcode: '[woocommerce_cart]',
+            },
+            success: function(data){
+                $("#cart-container").hide(100, function() {
+                    $(this).html(data).show(100);
+                });
+                $('.ajaxLoader').hide();
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+    }
+
+    function addToCart(p_id) {
+        $('#cartLink').addClass('cartLink-big');
+        $('#cartLinkSmall').addClass('cartLink-big');
+        setTimeout (function(){
+            $('#cartLink').removeClass('cartLink-big');
+            $('#cartLinkSmall').removeClass('cartLink-big');
+        }, 350);
+
+        $.ajax({
+            type: 'GET',
+            url: '/?add-to-cart='+p_id,
+            beforeSend: function () {
+                $('.ajaxLoader').show();
+            },
+            success: function(response, textStatus, jqXHR){
+                console.log("Product added");
+                updateCart();
+            },
+            error: function () {
+                $('.ajaxLoader').hide();
+            }
+        });
+    }
+
     $("#menu").mmenu({
         'navbar': {
             'title': 'МЕНЮ'
@@ -101,13 +145,11 @@ $(document).ready(function () {
         }
     });
 
-    $('.addToCart').on("click", function (){
-        $('#cartLink').addClass('cartLink-big');
-        $('#cartLinkSmall').addClass('cartLink-big');
-        setTimeout (function(){
-            $('#cartLink').removeClass('cartLink-big');
-            $('#cartLinkSmall').removeClass('cartLink-big');
-        }, 350);
+    $(document).on("click", ".add-to-cart-link", function (e){
+        e.preventDefault();
+        let addButton = $(this);
+        console.log(addButton);
+        console.log(addButton.data('product-id'));
+        addToCart(addButton.data('product-id'));
     });
-
 });
