@@ -162,4 +162,54 @@ if (!function_exists('content_class_by_sidebar')) { // если ф-я уже е�
 	}
 }
 
+//// Удаление товара из корзины
+//function remove_item_from_cart() {
+//    $cart = WC()->instance()->cart;
+//    $id = $_POST['product_id'];
+//    $cart_id = $cart->generate_cart_id($id);
+//    $cart_item_id = $cart->find_product_in_cart($cart_id);
+//
+//    if($cart_item_id){
+//        $cart->set_quantity($cart_item_id, 0);
+//        return true;
+//    }
+//    return false;
+//}
+//
+//add_action('wp_ajax_remove_item_from_cart', 'remove_item_from_cart');
+//add_action('wp_ajax_nopriv_remove_item_from_cart', 'remove_item_from_cart');
+
+add_action('wp_ajax_get_shortcode_content', 'get_shortcode_content');
+
+function get_shortcode_content() {
+    $shortcode = $_POST['shortcode'];
+	echo do_shortcode($shortcode);
+    wp_die();
+
+}
+
+function conditionally_load_woc_js_css(){
+    if( function_exists( 'is_woocommerce' ) ){
+        ## Dequeue scripts.
+        wp_enqueue_script('wc-cart');
+//        wp_enqueue_script('woocommerce');
+//        wp_enqueue_script('wc-add-to-cart');
+//        wp_enqueue_script('wc-cart-fragments');
+
+        ## Dequeue styles.
+        wp_dequeue_style('woocommerce-general');
+        wp_dequeue_style('woocommerce-layout');
+        wp_dequeue_style('woocommerce-smallscreen');
+    }
+}
+
+add_action( 'wp_enqueue_scripts', 'conditionally_load_woc_js_css' );
+
+function get_cart_total(){
+    do_action( 'woocommerce_cart_collaterals' );
+    wp_die();
+}
+
+add_action( 'wp_ajax_get_cart_total', 'get_cart_total' );
+
 ?>
