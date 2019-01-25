@@ -1,4 +1,63 @@
 $(document).ready(function () {
+    function updateCart() {
+        $.ajax({
+            type: 'POST',
+            url: '/wp-admin/admin-ajax.php',
+            data: {
+                action: 'get_cart_total'
+            },
+            success: function(data){
+                $("#cart-total-container").hide(100, function() {
+                    $(this).html(data).show(100);
+                });
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+
+        $.ajax({
+            type: 'POST',
+            url: '/wp-admin/admin-ajax.php',
+            data: {
+                action: 'get_shortcode_content',
+                shortcode: '[woocommerce_cart]',
+            },
+            success: function(data){
+                $("#cart-container").hide(100, function() {
+                    $(this).html(data).show(100);
+                });
+                $('.ajaxLoader').hide();
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+    }
+
+    function addToCart(p_id) {
+        $('#cartLink').addClass('cartLink-big');
+        $('#cartLinkSmall').addClass('cartLink-big');
+        setTimeout (function(){
+            $('#cartLink').removeClass('cartLink-big');
+            $('#cartLinkSmall').removeClass('cartLink-big');
+        }, 350);
+
+        $.ajax({
+            type: 'GET',
+            url: '/?add-to-cart='+p_id,
+            beforeSend: function () {
+                $('.ajaxLoader').show();
+            },
+            success: function(response, textStatus, jqXHR){
+                updateCart();
+            },
+            error: function () {
+                $('.ajaxLoader').hide();
+            }
+        });
+    }
+
     $("#menu").mmenu({
         'navbar': {
             'title': 'МЕНЮ'
@@ -101,13 +160,9 @@ $(document).ready(function () {
         }
     });
 
-    $('.addToCart').on("click", function (){
-        $('#cartLink').addClass('cartLink-big');
-        $('#cartLinkSmall').addClass('cartLink-big');
-        setTimeout (function(){
-            $('#cartLink').removeClass('cartLink-big');
-            $('#cartLinkSmall').removeClass('cartLink-big');
-        }, 350);
+    $(document).on("click", ".add-to-cart-link", function (e){
+        e.preventDefault();
+        let addButton = $(this);
+        addToCart(addButton.data('product-id'));
     });
-
 });
