@@ -127,7 +127,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                             </div>
                         <?php } ?>
                     </td>
-                    <td colspan="2" class="actions">
+                    <td colspan="3" class="actions">
                         <button type="submit" class="btn btn-sm footerBtn" name="update_cart" value="" disabled>Пересчитать</button>
 
                         <?php do_action( 'woocommerce_cart_actions' ); ?>
