@@ -152,4 +152,9 @@ $(document).ready(function () {
         console.log(addButton.data('product-id'));
         addToCart(addButton.data('product-id'));
     });
+
+    $(document).on('submit', '.woocommerce-cart-form', function(e) {
+        e.preventDefault();
+        console.log('asdfasdf');
+    });
 });

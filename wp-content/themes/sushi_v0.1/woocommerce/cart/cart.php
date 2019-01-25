@@ -130,10 +130,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 
                         <?php if ( wc_coupons_enabled() ) { ?>
                             <div class="coupon row">
-                                <div class="col pl-0">
+                                <div class="col-md col-12 pl-md-0 mb-2">
                                     <input type="text" name="coupon_code" class="form-control form-control-sm" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" />
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4 col-12">
                                     <button type="submit" class="btn btn-sm footerBtn" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
                                     <?php do_action( 'woocommerce_cart_coupon' ); ?>
                                 </div>
@@ -156,3 +156,5 @@ do_action( 'woocommerce_before_cart' ); ?>
         </div>
     </div>
 </form>
+
+<?php do_action( 'woocommerce_after_cart' ); ?>

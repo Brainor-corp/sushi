@@ -25,7 +25,18 @@
                             <div class="cnt">
                                 <div>Общая стоимость</div>
                                 <div class="total">
-                                    <strong><?php echo $woocommerce->cart->get_cart_total(); ?></strong>
+<!--                                    <strong>--><?php //echo $woocommerce->cart->get_cart_total(); ?><!--</strong>-->
+                                    <div class="cart-collaterals">
+                                        <?php
+                                        /**
+                                         * Cart collaterals hook.
+                                         *
+                                         * @hooked woocommerce_cross_sell_display
+                                         * @hooked woocommerce_cart_totals - 10
+                                         */
+                                        do_action( 'woocommerce_cart_collaterals' );
+                                        ?>
+                                    </div>
                                 </div>
                                 <div class="checkOutBtn">
                                     <div class="row">
