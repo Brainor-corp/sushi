@@ -91,36 +91,54 @@ get_header(); // подключаем header.php ?>
     <div class="container-fluid">
         <div class="container nav-container" style="position: relative; overflow: hidden">
             <div style="position: absolute; top: -50px" id="rolls"></div>
-            <?php	query_posts('cat=2'); // указываем идентификатор вашей рубрики.
-            while (have_posts()) : the_post();?>
-            <h2 class="pt-5"><?php single_cat_title() ?></h2>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-6 shopItem">
-                    <?php
-                    echo do_shortcode('[product_category columns="1" per_page="0" orderby="date" order="desc" category="rolls"]');
-                    ?>
+            <?php
+            $termSlug = 'rolls';
 
-<!--                        <div>-->
-<!--                            <a class="fancybox image" href="--><?php //echo get_template_directory_uri(); ?><!--/img/1.jpg">-->
-<!--                                <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>-->
-<!--                            </a>-->
-<!--                            <img class="img-fluid" src="--><?php //echo get_template_directory_uri(); ?><!--/img/1.jpg" alt="">-->
-<!---->
-<!--                            <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>-->
-<!---->
-<!--                        </div>-->
-<!--                        <div class="caption">-->
-<!--                            <h4>Аляска</h4>-->
-<!--                            <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>-->
-<!--                            <div class="price">239 <span><img class="ruble-ico" src="--><?php //echo get_template_directory_uri(); ?><!--/img/svg/icons/rubble-red.svg" alt=""></span></div>-->
-<!--                        </div>-->
-                </div>
+            $terms = get_terms( array('slug' => $termSlug));
+
+            $args = array(
+                'post_type'             => 'product',
+                'post_status'           => 'publish',
+                'ignore_sticky_posts'   => 1,
+                'posts_per_page'        => '12',
+                'tax_query'             => array(
+                    array(
+                        'taxonomy'      => 'product_cat',
+                        'field' => 'slug ', //This is optional, as it defaults to 'term_id'
+                        'terms'         => $termSlug,
+                        'operator'      => 'IN' // Possible values are 'IN', 'NOT IN', 'AND'.
+                    ),
+                )
+            );
+            $products = get_posts($args);
+            ?>
+            <h2 class="pt-5"><?php echo $terms[0]->name; ?></h2>
+            <div class="row">
+                <?php foreach ($products as $post):;
+                $wcProduct = wc_get_product($post->ID);
+                ?>
+                    <div class="col-lg-3 col-md-4 col-6 shopItem">
+
+                        <div>
+                            <a class="fancybox image" href="<?php echo get_template_directory_uri(); ?>/img/1.jpg">
+                                <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>
+                            </a>
+                            <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'full'); ?>
+                            <img class="img-fluid" src="<?php echo $featured_image[0]; ?>" alt="">
+                            <a href="<?php echo $wcProduct->add_to_cart_url(); ?>">
+                                <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
+                            </a>
+                        </div>
+                        <div class="caption">
+                            <h4><?php echo $wcProduct->get_name(); ?></h4>
+                            <div class="summary"><?php echo $wcProduct->get_short_description(); ?></div>
+                            <div class="price"><?php echo $wcProduct->get_price_html() ?></div>
+                        </div>
+                    </div>
+                <?php endforeach; wp_reset_postdata(); ?>
             </div>
         </div>
     </div>
-    <?php endwhile;
-    wp_reset_query();
-    ?>
     <!--    роллы-->
 
     <!--    суши-->

@@ -7,14 +7,16 @@
 ?>
 
 <footer id="cart">
+    <?php
+    global $woocommerce;
+    $items = $woocommerce->cart->get_cart();
+    ?>
     <section class="container-fluid">
         <div id="makeCheckOutFull" class="container nav-container px-0">
             <h4 class="h2">Оформление заказа</h4>
             <div id="makeCheckOut">
                 <form action="/" method="post">
                     <div class="row">
-
-
                         <div class="col-lg-8 col-12">
                             <div class="padTable">
                                 <table class="table table-responsive">
@@ -29,62 +31,32 @@
                                     </thead>
                                     <tbody>
 
+                                    <?php
+                                    foreach($items as $item => $values):
+                                    $product =  wc_get_product( $values['data']->get_id() );
+                                    ?>
 
                                     <tr>
-                                        <td class="col-6">Мохито</td>
-                                        <td class="text-right">116 <span><img class="ruble-ico" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></td>
+                                        <td class="col-6"><?php echo $product->get_name() ?></td>
+                                        <td class="text-right"><?php echo $product->get_price_html() ?></td>
                                         <td class="col-sm-1">
                                             <div class="form-group">
-                                                <input type="number" size="3" class="form-control form-control-sm valI" name="quantity_5776" id="quantity_5776" value="1">
+                                                <input type="number" size="3" class="form-control form-control-sm valI" name="quantity_5776" id="quantity_5776" value="<?php echo $values['quantity']; ?>">
                                             </div>
                                         </td>
                                         <td class="text-right nobr">
-                                            <strong>116 <span class="ruble-ico"><img class="ruble-ico" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></strong>
+                                            <?php
+                                            $productTotal = $product->get_price() * $values['quantity'];
+                                            ?>
+                                            <strong><?php echo $productTotal; ?><?php echo get_woocommerce_currency_symbol(); ?></strong>
                                         </td>
                                         <td class="text-center">
-                                            <a href=" #" class="del" title="Удалить товар из корзины">
+                                            <a href="<?php echo $woocommerce->cart->get_remove_url($item); ?>" class="del" title="Удалить товар из корзины">
                                                 <i class="fas fa-times"></i>
                                             </a>
                                         </td>
                                     </tr>
-
-
-                                    <tr>
-                                        <td class="col-6">Гранатовый лимонад</td>
-                                        <td class="text-right">116 <span><img class="ruble-ico" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></td>
-                                        <td class="col-sm-1">
-                                            <div class="form-group">
-                                                <input type="number" size="3" class="form-control form-control-sm valI" name="quantity_5776" id="quantity_5776" value="1">
-                                            </div>
-                                        </td>
-                                        <td class="text-right nobr">
-                                            <strong>116 <span><img class="ruble-ico" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <a href=" #" class="del" title="Удалить товар из корзины">
-                                                <i class="fas fa-times"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
-
-
-                                    <tr>
-                                        <td class="col-6">Арбузный сок</td>
-                                        <td class="text-right">112 <span><img class="ruble-ico" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></td>
-                                        <td class="col-sm-1">
-                                            <div class="form-group">
-                                                <input type="number" size="4" class="form-control form-control-sm valI" name="quantity_5776" id="quantity_5776" value="1">
-                                            </div>
-                                        </td>
-                                        <td class="text-right nobr">
-                                            <strong>112 <span><img class="ruble-ico" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <a href=" #" class="del" title="Удалить товар из корзины">
-                                                <i class="fas fa-times"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
+                                    <?php endforeach; ?>
 
 
                                     </tbody>
@@ -94,7 +66,7 @@
                                         <th class="text-right">Итого:</th>
                                         <th></th>
                                         <th class="text-right nobr">
-                                            <strong>344 <span><img class="ruble-ico" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-white.svg" alt=""></span></strong>
+                                            <strong><?php echo $woocommerce->cart->get_cart_total(); ?></strong>
                                         </th>
                                         <th></th>
                                     </tr>
@@ -119,7 +91,7 @@
                                 <div class="cnt">
                                     <div>Общая стоимость</div>
                                     <div class="total">
-                                        <strong>116 <span class="ruble-ico"><i class="fas fa-ruble-sign"></i></span></strong>
+                                        <strong><?php echo $woocommerce->cart->get_cart_total(); ?></strong>
                                     </div>
                                     <div class="checkOutBtn">
                                         <div class="row">
