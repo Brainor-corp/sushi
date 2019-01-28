@@ -68,6 +68,9 @@
                     <p class="aboutDelivery">
                     </p>
                 </li>
+
+                <?php if ( function_exists ( 'wpm_language_switcher' ) ) wpm_language_switcher (); ?>
+
             </ul>
         </nav>
     </div>
@@ -78,25 +81,26 @@
                     <div class="row">
                         <div class="col-12 bg-light-grey">
                             <div class="row shopMenu" id="shopMenu">
-                                <div class="col-sm-9 list-group" id="list-products">
+                                <div class="col-sm-7 list-group" id="list-products">
                                     <ul class="list-inline mb-0">
                                         <li class="logo list-inline-item">
                                             <a href="#top" class="anchor" title="Сайт службы доставки суши">
                                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" height="50" alt="Сайт службы доставки суши">
                                             </a>
                                         </li>
-                                        <li class="list-inline-item">
-                                            <a href="#rolls" class="anchor">Роллы</a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#sushi" class="anchor">Суши</a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#combinations" class="anchor">Наборы</a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#drinks" class="anchor">Напитки</a>
-                                        </li>
+                                        <?php wp_nav_menu( array( 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
+<!--                                        <li class="list-inline-item">-->
+<!--                                            <a href="#rolls" class="anchor">Роллы</a>-->
+<!--                                        </li>-->
+<!--                                        <li class="list-inline-item">-->
+<!--                                            <a href="#sushi" class="anchor">Суши</a>-->
+<!--                                        </li>-->
+<!--                                        <li class="list-inline-item">-->
+<!--                                            <a href="#combinations" class="anchor">Наборы</a>-->
+<!--                                        </li>-->
+<!--                                        <li class="list-inline-item">-->
+<!--                                            <a href="#drinks" class="anchor">Напитки</a>-->
+<!--                                        </li>-->
                                     </ul>
                                 </div>
                                 <div class="col-sm-2 text-right">
@@ -107,6 +111,9 @@
                                 </div>
                                 <div class="col-sm-1 text-right">
                                     <a href="#cart" class="cartLink anchor" id="cartLink" title="Корзина"><i class="fa fa-shopping-cart"></i></a>
+                                </div>
+                                <div class="col-2 text-left float-right">
+                                    <?php if ( function_exists ( 'wpm_language_switcher' ) ) wpm_language_switcher (); ?>
                                 </div>
                             </div>
                         </div>

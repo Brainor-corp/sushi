@@ -319,3 +319,6 @@ header #shopMenu li.active {
 .ruble-ico{
     height: 10px!important;
 }
+.switcher-dropdown>li:hover .language-dropdown {
+    background-color: white;
+}

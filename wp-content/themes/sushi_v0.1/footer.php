@@ -141,7 +141,7 @@
 
     <div class="col-12">
         <div class="text-center">
-            <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>asdasd
+            <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
         </div>
     </div>
 </footer>
