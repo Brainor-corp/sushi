@@ -85,50 +85,36 @@ get_header(); // подключаем header.php ?>
     $categories =
         get_categories( array(
         'taxonomy'     => 'product_cat',
-        'type'         => 'post',
-        'child_of'     => 0,
-        'parent'       => '',
         'orderby'      => 'name',
         'order'        => 'ASC',
         'hide_empty'   => 1,
-        'hierarchical' => 1,
-        'exclude'      => '',
-        'include'      => '',
-        'number'       => 0,
-        'pad_counts'   => false,
-        // полный список параметров смотрите в описании функции http://wp-kama.ru/function/get_terms
     ) );
 
     ?>
 
-    <?php foreach ($categories as $category) : ?>
+    <?php foreach ($categories as $category) :?>
 
         <div class="container-fluid">
             <div class="container nav-container" style="position: relative; overflow: hidden">
                 <div style="position: absolute; top: -50px" id="<?php echo $category->slug ?>"></div>
                 <?php
-                $termSlug = $category->slug;
-
-                $terms = get_terms( array('slug' => $termSlug));
+                $terms = get_terms( array('slug' => $category->slug));
 
                 $args = array(
                     'post_type'             => 'product',
-                    'post_status'           => 'publish',
-                    'ignore_sticky_posts'   => 1,
-                    'posts_per_page'        => '12',
+                    'numberposts'           => -1,
                     'tax_query'             => array(
                         array(
-                            'taxonomy'      => 'product_cat',
-                            'field' => 'slug ', //This is optional, as it defaults to 'term_id'
-                            'terms'         => $termSlug,
-
+                            'taxonomy'      => $category->taxonomy,
+                            'field'         => 'id',
+                            'terms'         => array($category->term_id),
                             'operator'      => 'IN' // Possible values are 'IN', 'NOT IN', 'AND'.
                         ),
                     )
                 );
                 $products = get_posts($args);
                 ?>
-                <h2 class="pt-5"><?php echo $terms[0]->name; ?></h2>
+                <h2 class="pt-5"><?php echo $category->name; ?></h2>
                 <div class="row">
                     <?php foreach ($products as $post):;
                         $wcProduct = wc_get_product($post->ID);
@@ -145,45 +131,18 @@ get_header(); // подключаем header.php ?>
                                     <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
                                 </a>
                             </div>
-                            <div class="caption">
+                            <div class="caption product-description" data-post-id="<?php echo $post->ID; ?>">
                                 <h4><?php echo $wcProduct->get_name(); ?></h4>
                                 <div class="summary"><?php echo $wcProduct->get_short_description(); ?></div>
                                 <div class="price"><?php echo $wcProduct->get_price_html() ?></div>
                             </div>
                         </div>
-                    <?php endforeach; wp_reset_postdata(); ?>
+                    <?php endforeach;?>
                 </div>
             </div>
         </div>
-
+        <?php unset($products); ?>
     <?php endforeach; ?>
-
-    <!--    напитки-->
-    <div class="container-fluid">
-        <div class="container nav-container" style="position: relative; overflow: hidden">
-            <div style="position: absolute; top: -50px" id="drinks"></div>
-            <h2 class="pt-5">Напитки (рубрика)</h2>
-            <div class="row">
-                <?php for ($i = 0; $i < 4; $i++) { ?>
-                    <div class="col-lg-3 col-md-4 col-6 shopItem">
-                        <div>
-                            <a class="fancybox image" href="<?php echo get_template_directory_uri(); ?>/img/1.jpg">
-                                <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>
-                            </a>
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="">
-                            <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
-                        </div>
-                        <div class="caption">
-                            <h4>Аляска</h4>
-                            <div class="summary"><p>Копченый лосось, крабовые палочки</p></div>
-                            <div class="price">239 <span><img class="ruble-ico" src="<?php echo get_template_directory_uri(); ?>/img/svg/icons/rubble-red.svg" alt=""></span></div>
-                        </div>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
-    </div>
-    <!--    напитки-->
 </div>
 
 
@@ -235,7 +194,25 @@ while (have_posts()) : the_post();?>
 wp_reset_query();
 ?>
 
-
+<!--product-description-modal-->
+<div class="modal fade" id="product-description-modal" tabindex="-1" role="dialog"
+     aria-labelledby="productDescriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >
+                    Описание товара
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-danger">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="product-description-modal-content">
+            </div>
+        </div>
+    </div>
+</div>
+<!--product-description-modal-->
 <!--modals-->
 
 

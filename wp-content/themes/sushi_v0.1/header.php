@@ -69,7 +69,7 @@
                     </p>
                 </li>
 
-                <?php if ( function_exists ( 'wpm_language_switcher' ) ) wpm_language_switcher (); ?>
+
 
             </ul>
         </nav>
@@ -89,18 +89,6 @@
                                             </a>
                                         </li>
                                         <?php wp_nav_menu( array( 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
-<!--                                        <li class="list-inline-item">-->
-<!--                                            <a href="#rolls" class="anchor">Роллы</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="list-inline-item">-->
-<!--                                            <a href="#sushi" class="anchor">Суши</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="list-inline-item">-->
-<!--                                            <a href="#combinations" class="anchor">Наборы</a>-->
-<!--                                        </li>-->
-<!--                                        <li class="list-inline-item">-->
-<!--                                            <a href="#drinks" class="anchor">Напитки</a>-->
-<!--                                        </li>-->
                                     </ul>
                                 </div>
                                 <div class="col-sm-2 text-right">
@@ -113,7 +101,18 @@
                                     <a href="#cart" class="cartLink anchor" id="cartLink" title="Корзина"><i class="fa fa-shopping-cart"></i></a>
                                 </div>
                                 <div class="col-2 text-left float-right">
-                                    <?php if ( function_exists ( 'wpm_language_switcher' ) ) wpm_language_switcher (); ?>
+                                                    <br><br>
+                                    <?php if ( function_exists ( 'wpm' ) ):
+                                        $languages = wpm()->setup->get_languages();
+                                        $currentUrl =  wpm_get_current_url();
+                                        $currentLanguage = wpm_get_language();
+
+                                    ?>
+                                        <?php foreach ($languages as $key=>$language): ?>
+                                        <?php $newUrl = wpm_translate_url( $currentUrl, $key ); ?>
+                                        <a href="<?php echo $newUrl; ?>"><img src="/wp-content/plugins/wp-multilang/flags/<?php echo $language['flag']; ?>" alt="<?php echo $language['name']; ?>"></a>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>

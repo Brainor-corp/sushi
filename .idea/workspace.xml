@@ -2,466 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb818464-1f47-4d3c-9890-4ca82ccba987" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/add-lang-to-customizer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/add-lang-to-customizer.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/additional-settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/additional-settings.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/customizer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/customizer.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/language-switcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/language-switcher.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/languages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/languages.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/settings.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/translator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/scripts/translator.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/admin.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/admin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/admin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/common/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/components/_lang-switcher.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/components/_language-metabox.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/components/_languages-list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/layouts/_customizer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/layouts/_gutenberg.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/layouts/_settings.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/admin/layouts/_table.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/common/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/components/_lang-switcher.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/main.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/main.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/notices.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/notices.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/notices.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/notices.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/assets/styles/notices/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/all-in-one-seo-pack.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/better-search.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/buddypress.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/contact-form-7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/download-monitor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/google-maps-builder.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/mailchimp-for-wp.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/megamenu.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/ml-slider.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/newsletter.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/nextgen-gallery.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/siteorigin-panels.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/tablepress.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/woocommerce-customizer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/woocommerce.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/wordpress-seo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/plugins/wp-pagenavi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/configs/themes/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/core-config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ad.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ae.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/af.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ai.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ai.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/al.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/am.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/an.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/aq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ar.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/arle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/as.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/at.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/at.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/au.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/aw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ax.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/az.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ba.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/be.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bi.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/br.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/by.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/bz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ca.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ca.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cc.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ci.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ck.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/co.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cr.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/cz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/da.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/de.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/dj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/dk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/dm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/do.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/dz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ec.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ec.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ee.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/eg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/eh.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/eh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/el.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/en.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/eo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/er.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/es.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/es.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/et.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/et.o.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/et.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/eu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/fa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/fi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/fj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/fk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/fm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/fo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/fr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/fx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ga.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gt.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/gy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/he.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/hi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/hk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/hm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/hn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/hr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ht.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ht.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/hu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/hy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/id.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/il.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/im.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/io.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/iq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/is.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/it.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ja.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/je.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/jm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/jo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/jp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ke.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/kg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/kh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ki.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/km.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/kn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ko.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/kp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/kr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ku.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/kw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ky.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/kz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/la.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/lb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/lc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/li.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/lk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/lr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/lt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/lu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/lv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ly.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ma.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/md.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/me.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ml.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ms.bak.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ms.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/my.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/mz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/na.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/nb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/nc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/nf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ni.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ni.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/nil.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/nl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/np.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/nr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/nu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/nz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/oc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/om.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pf.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pt-br.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pt-pt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/pw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/py.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/qa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/qu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/re.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/rs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ru.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/rw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/se.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/si.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sl-wrong.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/so.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/st.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/sz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/td.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/th.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tj.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tl.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/to.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/tz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ua.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/uk.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/um.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ur.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/us.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/uy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/uz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/va.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/vc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/vg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/vi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/vn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/vu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/wf.alt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/wf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ws.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/xt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/ye.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/yi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/yt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/yu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/za.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/zh-hans.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/zh-hant.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/zh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/zm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/zu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/zw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/flags/zz.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/abstracts/abstract-wpm-object.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/abstracts/abstract-wpm-widget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-assets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-customizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-edit-menus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-gutenberg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-menus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-meta-boxes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-notices.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-posts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-qtranslate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-taxonomies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin-widgets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/class-wpm-admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/meta-boxes/class-wpm-meta-box-comment-languages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/meta-boxes/class-wpm-meta-box-post-languages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/settings/class-wpm-settings-additional.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/settings/class-wpm-settings-general.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/settings/class-wpm-settings-languages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/settings/class-wpm-settings-page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/settings/views/html-languages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/views/html-admin-settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/views/html-notice-custom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/views/html-notice-update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/views/html-notice-updated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/views/html-notice-updating.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/admin/wpm-admin-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wp-multilang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-ajax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-background-updater.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-comments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-frontend-scripts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-install.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-menus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-options.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-posts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-rest-settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-setup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-shortcodes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-site-options.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-taxonomies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-widgets.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-acf.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-aiosp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-better-search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-buddypress.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-cf7.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-mailchimp-for-wp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-masterslider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-megamenu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-newsletter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-ngg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-pbso.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-tablepress.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-vc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-woocommerce.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/integrations/class-wpm-yoast-seo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/libraries/abstract-wp-async-request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/libraries/abstract-wp-background-process.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/libraries/class-wpm-walker-nav-menu-edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/widgets/class-wpm-widget-language-switcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-config-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-core-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-formatting-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-language-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-template-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-translation-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-update-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-widget-functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/languages/wp-multilang-bg_BG.mo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/languages/wp-multilang-bg_BG.po" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/languages/wp-multilang.pot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/templates/admin-language-switcher-customizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/templates/admin-language-switcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/templates/language-switcher-dropdown.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/templates/language-switcher-list.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/templates/language-switcher-select.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/uninstall.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/autoload_52.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/ClassLoader52.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/autoload_real_52.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/vendor/composer/installed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/wp-multilang/wp-multilang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/general.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/ajax/php/get_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-includes/class-walker-nav-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-includes/class-walker-nav-menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-includes/nav-menu-template.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-includes/nav-menu-template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/js/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -523,11 +73,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+            <state relative-caret-position="311">
+              <caret line="119" column="51" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
               </folding>
@@ -535,110 +85,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="91" column="71" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-includes/class-walker-nav-menu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="218" column="41" selection-start-line="218" selection-start-column="41" selection-end-line="218" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-includes/nav-menu-template.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="51" column="184" selection-start-line="51" selection-start-column="184" selection-end-line="51" selection-end-column="184" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-966">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-template-functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="98" column="65" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
-              <folding>
-                <element signature="n#style#0;n#br#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#br#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="879">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/wp-config1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-translation-functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1313">
-              <caret line="229" selection-start-line="229" selection-end-line="229" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/main-page.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2114">
-              <caret line="151" column="1" selection-start-line="151" selection-start-column="1" selection-end-line="151" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="143" column="74" lean-forward="true" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
+            <state relative-caret-position="369">
+              <caret line="149" column="98" lean-forward="true" selection-start-line="149" selection-start-column="98" selection-end-line="149" selection-end-column="98" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/general.css">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4508">
-              <caret line="322" column="27" selection-start-line="322" selection-start-column="27" selection-end-line="322" selection-end-column="27" />
+            <state relative-caret-position="399">
+              <caret line="178" column="25" lean-forward="true" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_post.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/ajax/php/get_post.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="212" column="57" selection-start-line="212" selection-start-column="57" selection-end-line="212" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="90" column="115" selection-start-line="90" selection-start-column="115" selection-end-line="90" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -654,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>shop_loop_item_title</find>
       <find>&lt;h2 class=&quot;woocommerce-loop-product__title&quot;&gt;</find>
       <find>woocommerce-product-details__short-description</find>
       <find>rub</find>
@@ -684,6 +170,7 @@
       <find>add_filter</find>
       <find>&lt;li</find>
       <find>fla</find>
+      <find>url</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -693,6 +180,7 @@
     </replaceStrings>
     <dirStrings>
       <dir>D:\OSPanel\domains\sushi.loc</dir>
+      <dir>D:\OSPanel\domains\sushi.loc\wp-content\plugins\wp-multilang</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -735,18 +223,19 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/cart.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/page-woocomerce-cart.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/page-woocommerce-cart.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/js/main.js" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/cart.min.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/cart/cart.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/general.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php" />
         <option value="$PROJECT_DIR$/wp-includes/nav-menu-template.php" />
         <option value="$PROJECT_DIR$/wp-includes/class-walker-nav-menu.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/index.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-template-functions.php" />
         <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/ajax/php/get_post.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/sushi_v0.1/js/main.js" />
       </list>
     </option>
   </component>
@@ -763,7 +252,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="528" />
+    <option name="x" value="527" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -775,29 +264,59 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="sushi.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sushi.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="sushi.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="sushi.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sushi.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-includes" type="462c0819:PsiDirectoryNode" />
+              <item name="sushi.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sushi.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sushi.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sushi.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sushi.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sushi_v0.1" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sushi.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sushi.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sushi_v0.1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ajax" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="sushi.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sushi.loc" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="wp-content" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sushi_v0.1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ajax" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="wp-config&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-config.php&#10;gitig&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/.gitignore&#10;foo&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/footer.php&#10;руфву&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/header.php&#10;heade&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/header.php&#10;footer&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/footer.php&#10;main&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/css/pages/main-page-media.css&#10;gene&#9;FILE&#9;file://C:/OSPanel/domains/sushi.loc/wp-content/themes/sushi_v0.1/css/pages/general.css" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../precedent.local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/plugins/wp-multilang" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -842,6 +361,7 @@
       <workItem from="1548220462116" duration="10824000" />
       <workItem from="1548306603303" duration="1649000" />
       <workItem from="1548370877519" duration="4487000" />
+      <workItem from="1548703341308" duration="8619000" />
     </task>
     <task id="LOCAL-00001" summary="Full hell some shit">
       <created>1548163518695</created>
@@ -924,33 +444,33 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95630000" />
+    <option name="totallyTimeSpent" value="104249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16614583" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32984293" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32984293" />
-      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22265625" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -977,6 +497,27 @@
     <wordpressPath>C:\OSPanel\domains\sushi.loc</wordpressPath>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/main-page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3322">
+          <caret line="151" column="1" selection-start-line="151" selection-start-column="1" selection-end-line="151" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3058">
+          <caret line="143" column="74" lean-forward="true" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/general.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7084">
+          <caret line="322" column="27" selection-start-line="322" selection-start-column="27" selection-end-line="322" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/loop/sale-flash.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1090,9 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-admin/admin-ajax.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/global/quantity-input.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1105,22 +643,10 @@
         <state relative-caret-position="-316" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/cart/cart-item-data.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/cart/cart-shipping.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/cart/mini-cart.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-884" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/notices/notice.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/notices/success.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/content-product.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1157,20 +683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/page-custom.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/woocommerce/cart/cart-totals.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="27" column="38" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="212" column="21" selection-start-line="212" selection-start-column="21" selection-end-line="212" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1204,27 +720,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/main-page.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2114">
+        <state relative-caret-position="3322">
           <caret line="151" column="1" selection-start-line="151" selection-start-column="1" selection-end-line="151" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/css/pages/general.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4508">
+        <state relative-caret-position="7084">
           <caret line="322" column="27" selection-start-line="322" selection-start-column="27" selection-end-line="322" selection-end-column="27" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="143" column="74" lean-forward="true" selection-start-line="143" selection-start-column="74" selection-end-line="143" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/nav-menu-template.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1233,9 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/class-wp-walker.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/class-walker-nav-menu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -1243,24 +746,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/js/main.js">
+    <entry file="file://$USER_HOME$/Desktop/wp-config1.php" />
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-966">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="1562">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-translation-functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wpm-shortcodes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1313">
-          <caret line="229" selection-start-line="229" selection-end-line="229" />
+        <state relative-caret-position="479">
+          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-template-functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="98" column="65" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
+        <state relative-caret-position="-8731">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#br#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#br#0;n#!!top" expanded="true" />
@@ -1268,34 +772,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/wp-config1.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/class-wp-multilang.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="88" />
+        <state relative-caret-position="242">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-language-functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="211">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-translation-functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-259">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/wp-multilang/includes/wpm-core-functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="174" column="32" lean-forward="true" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="212" column="57" selection-start-line="212" selection-start-column="57" selection-end-line="212" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="90" column="115" selection-start-line="90" selection-start-column="115" selection-end-line="90" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="149" column="98" lean-forward="true" selection-start-line="149" selection-start-column="98" selection-end-line="149" selection-end-column="98" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="311">
+          <caret line="119" column="51" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/ajax/php/get_post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="91" column="71" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="71" />
+        <state relative-caret-position="132">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/sushi_v0.1/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="178" column="25" lean-forward="true" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
         </state>
       </provider>
     </entry>

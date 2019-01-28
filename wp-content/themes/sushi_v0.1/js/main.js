@@ -165,4 +165,28 @@ $(document).ready(function () {
         let addButton = $(this);
         addToCart(addButton.data('product-id'));
     });
+
+    $(document).on("click", ".product-description", function (e){
+        e.preventDefault();
+        let id = $(this).data('postId');
+
+        $.ajax({
+            type: 'POST',
+            url: '/wp-content/themes/sushi_v0.1/ajax/php/get_post.php',
+            data: {
+                id: id
+            },
+            cache: false,
+            beforeSend: function() {
+                // document.getElementById('ajax-loading-gif').style.display = 'block';
+            },
+            success: function(html){
+                $("#product-description-modal-content").html(html);
+                $('#product-description-modal').modal('show')
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+    });
 });
