@@ -135,18 +135,28 @@ a:hover .img {
 #owl-main .item{
     padding: 1px;
 }
-.shopItem:hover .cart2 {
-     top: 120px;
-     opacity: 1;
+.parent:hover .cart2 {
+    top: 0;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+    height: 35px;
+    width: 35px;
+    margin: auto;
+    opacity: 1;
  }
 
-.shopItem .cart2 {
+.cart2 {
+    top: -200px;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+    height: 40px;
+    width: 40px;
     padding: 10px;
     position: absolute;
-    top: 140px;
     z-index: 20;
-    left: 50%;
-    margin-left: -15px;
+    margin: auto;
     background: #ce2029;
     color: #fff;
     border-radius: 100%;
@@ -157,18 +167,27 @@ a:hover .img {
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-.shopItem:hover .openimg {
-    top: 120px;
+.parent:hover .openimg {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50px;
+    height: 35px;
+    width: 35px;
+    margin: auto;
     opacity: 1;
 }
-
-.shopItem .openimg {
+.openimg {
+    top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 50px;
+    height: 40px;
+    width: 40px;
     padding: 10px;
     position: absolute;
-    top: 140px;
     z-index: 20;
-    left: 50%;
-    margin-left: -55px;
+    margin: auto;
     background: #2352ce;
     color: #fff;
     border-radius: 100%;

@@ -80,33 +80,33 @@ $(document).ready(function () {
         }
     });
 
-    var b, j = $("#shopMenu"),
-    menuItems = j.find("li > a"), scrollItems = menuItems.map(function() {
-        var m = $($(this).attr("href"));
-        if (m.length) {
-            return m
-        }
-    });
-
-    g = j.outerHeight();
-
-    $(window).scroll(function() {
-        var m = $(this).scrollTop() + g;
-        var n = scrollItems.map(function() {
-            if ($(this).offset().top < m) {
-                return this
-            }
-        });
-        n = n[n.length - 1];
-        var o = n && n.length ? n[0].id : "";
-        if (b !== o) {
-            b = o;
-            menuItems.parent().removeClass("active").end().filter("[href$='" + o + "']").parent().addClass("active")
-        }
-        if ($(this).scrollTop() < 10) {
-            menuItems.removeClass("active")
-        }
-    });
+    // var b, j = $("#shopMenu"),
+    // menuItems = j.find("li > a"), scrollItems = menuItems.map(function() {
+    //     var m = $($(this).attr("href"));
+    //     if (m.length) {
+    //         return m
+    //     }
+    // });
+    //
+    // g = j.outerHeight();
+    //
+    // $(window).scroll(function() {
+    //     var m = $(this).scrollTop() + g;
+    //     var n = scrollItems.map(function() {
+    //         if ($(this).offset().top < m) {
+    //             return this
+    //         }
+    //     });
+    //     n = n[n.length - 1];
+    //     var o = n && n.length ? n[0].id : "";
+    //     if (b !== o) {
+    //         b = o;
+    //         menuItems.parent().removeClass("active").end().filter("[href$='" + o + "']").parent().addClass("active")
+    //     }
+    //     if ($(this).scrollTop() < 10) {
+    //         menuItems.removeClass("active")
+    //     }
+    // });
 
     $(document).on("click","a.anchor", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
@@ -164,5 +164,31 @@ $(document).ready(function () {
         e.preventDefault();
         let addButton = $(this);
         addToCart(addButton.data('product-id'));
+    });
+
+    $(document).on("click", ".product-description", function (e){
+        e.preventDefault();
+        let id = $(this).data('postId');
+
+        $.ajax({
+            type: 'POST',
+            url: '/wp-content/themes/sushi_v0.1/ajax/php/get_post.php',
+            data: {
+                id: id
+            },
+            cache: false,
+            beforeSend: function() {
+                $('.ajaxLoader').show();
+            },
+            success: function(html){
+                $("#product-description-modal-content").html(html);
+                $('#product-description-modal').modal('show');
+                $('.ajaxLoader').hide();
+            },
+            error: function (data) {
+                console.log(data);
+                $('.ajaxLoader').hide();
+            }
+        });
     });
 });
