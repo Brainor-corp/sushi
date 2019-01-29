@@ -32,7 +32,7 @@
 	
 	<?php wp_head(); // необходимо для работы плагинов и функционала ?>
 </head>
-<body <?php body_class(); // все классы для body ?>>
+<body <?php body_class(); // все классы для body ?> style="position: relative;" data-spy="scroll" data-target="#list-products">
 
 
 
@@ -91,8 +91,8 @@
                     <div class="row">
                         <div class="col-12 bg-light-grey">
                             <div class="row shopMenu" id="shopMenu">
-                                <div class="col-sm-8 list-group" id="list-products">
-                                    <ul class="list-inline mb-0">
+                                <div class="col-sm-8 list-inline" id="list-products">
+                                    <ul class="mb-0">
                                         <li class="logo list-inline-item">
                                             <a href="#top" class="anchor" title="Сайт службы доставки суши">
                                                 <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" height="50" alt="Сайт службы доставки суши">

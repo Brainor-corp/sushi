@@ -216,7 +216,7 @@ class Walker_Nav_Menu extends Walker {
 		$title = apply_filters( 'nav_menu_item_title', $title, $item, $args, $depth );
 
 		$item_output = $args->before;
-		$item_output .= '<a class="anchor"'. $attributes .'>';
+		$item_output .= '<a class="anchor list-group-item"'. $attributes .'>';
 		$item_output .= $args->link_before . $title . $args->link_after;
 		$item_output .= '</a>';
 		$item_output .= $args->after;

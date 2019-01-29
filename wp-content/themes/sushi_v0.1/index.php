@@ -96,7 +96,7 @@ get_header(); // подключаем header.php ?>
 
         <div class="container-fluid">
             <div class="container nav-container" style="position: relative; overflow: hidden">
-                <div style="position: absolute; top: -50px" id="<?php echo $category->slug ?>"></div>
+                <div style="position: relative; top: -50px" id="<?php echo $category->slug ?>"></div>
                 <?php
                 $terms = get_terms( array('slug' => $category->slug));
 
@@ -121,15 +121,17 @@ get_header(); // подключаем header.php ?>
                         ?>
                         <div class="col-lg-3 col-md-4 col-6 shopItem">
 
-                            <div>
+                            <div class="parent">
                                 <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'full'); ?>
-                                <a class="fancybox image" href="<?php echo $featured_image[0]; ?>">
-                                    <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>
-                                </a>
                                 <img class="img-fluid" src="<?php echo $featured_image[0]; ?>" alt="">
-                                <a href="<?php echo $wcProduct->add_to_cart_url(); ?>" data-product-id="<?php echo $wcProduct->get_id(); ?>" class="add-to-cart-link">
-                                    <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
-                                </a>
+                                <div class="child">
+                                    <a class="fancybox image" href="<?php echo $featured_image[0]; ?>">
+                                        <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>
+                                    </a>
+                                    <a href="<?php echo $wcProduct->add_to_cart_url(); ?>" data-product-id="<?php echo $wcProduct->get_id(); ?>" class="add-to-cart-link">
+                                        <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
+                                    </a>
+                                </div>
                             </div>
                             <div class="caption product-description" data-post-id="<?php echo $post->ID; ?>">
                                 <h4><?php echo $wcProduct->get_name(); ?></h4>
@@ -144,7 +146,6 @@ get_header(); // подключаем header.php ?>
         <?php unset($products); ?>
     <?php endforeach; ?>
 </div>
-
 
 <!--modals-->
 

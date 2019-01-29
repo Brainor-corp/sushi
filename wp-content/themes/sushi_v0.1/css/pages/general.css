@@ -24,11 +24,6 @@ header .shopMenu {
     letter-spacing: .1em;
     font-weight: 700;
 }
-header .shopMenu li {
-    margin: 0 0 0 15px;
-    padding: 10px 5px;
-    border-bottom: 2px solid transparent;
-}
 .shopMenu li a {
     border: none;
     color: #000;
@@ -329,4 +324,26 @@ header #shopMenu li.active {
 .woocommerce-message a:hover{
     color: wheat;
     border-bottom: 1px dashed;
+}
+.list-group-item.active {
+    border-bottom: 2px solid #ce2029!important;
+    color: black!important;
+    background-color: transparent!important;
+}
+.list-group-item:last-child {
+    border-radius: 0!important;
+}
+.list-group-item:first-child {
+    border-radius: 0!important;
+}
+.list-group-item {
+    padding: 1rem 0.75rem!important;
+    padding-bottom: 48px!important;
+    margin-bottom: 0!important;
+    background-color: transparent!important;
+}
+
+.parent{
+    position: relative;
+    height:auto;
 }

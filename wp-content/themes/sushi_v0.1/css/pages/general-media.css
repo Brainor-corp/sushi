@@ -8,27 +8,4 @@
     .valI{
         width: 100%!important;
     }
-    .shopItem:hover .cart2 {
-        top: 50px;
-        opacity: 1;
-    }
-
-    .shopItem .cart2 {
-        padding: 10px;
-        position: absolute;
-        top: 0px;
-        z-index: 20;
-        left: 50%;
-        margin-left: -15px;
-        background: #ce2029;
-        color: #fff;
-        border-radius: 100%;
-        font-size: 14px;
-        cursor: pointer;
-        opacity: 0;
-        -webkit-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-    }
-    
 }
