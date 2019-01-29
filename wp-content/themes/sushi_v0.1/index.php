@@ -122,10 +122,10 @@ get_header(); // подключаем header.php ?>
                         <div class="col-lg-3 col-md-4 col-6 shopItem">
 
                             <div>
-                                <a class="fancybox image" href="<?php echo get_template_directory_uri(); ?>/img/1.jpg">
+                                <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'full'); ?>
+                                <a class="fancybox image" href="<?php echo $featured_image[0]; ?>">
                                     <span class="openimg addToCart"><i class="fas fa-search-plus"></i></span>
                                 </a>
-                                <?php $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID),'full'); ?>
                                 <img class="img-fluid" src="<?php echo $featured_image[0]; ?>" alt="">
                                 <a href="<?php echo $wcProduct->add_to_cart_url(); ?>" data-product-id="<?php echo $wcProduct->get_id(); ?>" class="add-to-cart-link">
                                     <span class="cart2 addToCart"><i class="fa fa-shopping-cart"></i></span>
