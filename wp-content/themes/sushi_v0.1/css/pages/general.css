@@ -322,3 +322,11 @@ header #shopMenu li.active {
 .switcher-dropdown>li:hover .language-dropdown {
     background-color: white;
 }
+.woocommerce-message a{
+    color: white;
+    border-bottom: 1px dashed;
+}
+.woocommerce-message a:hover{
+    color: wheat;
+    border-bottom: 1px dashed;
+}

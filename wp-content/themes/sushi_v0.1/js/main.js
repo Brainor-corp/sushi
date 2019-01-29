@@ -178,14 +178,16 @@ $(document).ready(function () {
             },
             cache: false,
             beforeSend: function() {
-                // document.getElementById('ajax-loading-gif').style.display = 'block';
+                $('.ajaxLoader').show();
             },
             success: function(html){
                 $("#product-description-modal-content").html(html);
-                $('#product-description-modal').modal('show')
+                $('#product-description-modal').modal('show');
+                $('.ajaxLoader').hide();
             },
             error: function (data) {
                 console.log(data);
+                $('.ajaxLoader').hide();
             }
         });
     });

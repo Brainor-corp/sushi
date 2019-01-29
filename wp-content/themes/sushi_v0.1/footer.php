@@ -138,12 +138,6 @@
             </div>
         </div>
     </section>
-
-    <div class="col-12">
-        <div class="text-center">
-            <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>
-        </div>
-    </div>
 </footer>
 
 <!--<script src="--><?php //echo get_template_directory_uri(); ?><!--/plugins/slide-menu/vendor/jquery/jquery.min.js"></script>-->
