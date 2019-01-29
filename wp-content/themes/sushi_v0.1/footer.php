@@ -138,15 +138,9 @@
             </div>
         </div>
     </section>
-
-    <div class="col-12">
-        <div class="text-center">
-            <?php echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]'); ?>asdasd
-        </div>
-    </div>
 </footer>
 
-<script src="<?php echo get_template_directory_uri(); ?>/plugins/slide-menu/vendor/jquery/jquery.min.js"></script>
+<!--<script src="--><?php //echo get_template_directory_uri(); ?><!--/plugins/slide-menu/vendor/jquery/jquery.min.js"></script>-->
 <script src="<?php echo get_template_directory_uri(); ?>/plugins/mmenu/dist/jquery.mmenu.all.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/plugins/OwlCarousel/dist/owl.carousel.min.js"></script>
 <!--<script src="--><?php //echo get_template_directory_uri(); ?><!--/plugins/slide-menu/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>-->

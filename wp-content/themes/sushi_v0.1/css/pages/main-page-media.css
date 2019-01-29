@@ -70,4 +70,67 @@
     .mt-owl{
         margin-top: 4rem;
     }
+    .parent:hover .cart2 {
+        top: 0;
+        bottom: 0;
+        left: 50px;
+        right: 0;
+        height: 35px;
+        width: 35px;
+        margin: auto;
+        opacity: 1;
+    }
+
+    .cart2 {
+        top: -200px;
+        bottom: 0;
+        left: 50px;
+        right: 0;
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+        position: absolute;
+        z-index: 20;
+        margin: auto;
+        background: #ce2029;
+        color: #fff;
+        border-radius: 100%;
+        font-size: 14px;
+        cursor: pointer;
+        opacity: 0;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+    .parent:hover .openimg {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 50px;
+        height: 35px;
+        width: 35px;
+        margin: auto;
+        opacity: 1;
+    }
+    .openimg {
+        top: 200px;
+        bottom: 0;
+        left: 0;
+        right: 50px;
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+        position: absolute;
+        z-index: 20;
+        margin: auto;
+        background: #2352ce;
+        color: #fff;
+        border-radius: 100%;
+        font-size: 14px;
+        cursor: pointer;
+        opacity: 0;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
 }

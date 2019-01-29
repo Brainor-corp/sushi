@@ -91,13 +91,13 @@ if (!function_exists('pagination')) { // если ф-я уже есть в до�
 	}
 }
 
-add_action('wp_footer', 'add_scripts'); // приклеем ф-ю на добавление скриптов в футер
+add_action('wp_enqueue_scripts', 'add_scripts'); // приклеем ф-ю на добавление скриптов в футер
 if (!function_exists('add_scripts')) { // если ф-я уже есть в дочерней теме - нам не надо её определять
 	function add_scripts()
     { // добавление скриптов
         if (is_admin()) return false; // если мы в админке - ничего не делаем
         wp_deregister_script('jquery'); // выключаем стандартный jquery
-        wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', '', '', true); // добавляем свой
+        wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', '', '', false); // добавляем свой
         wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', '', '', true); // бутстрап
         wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', '', '', true); // и скрипты шаблона
 //        wp_enqueue_script('canvas', get_template_directory_uri() . '/plugins/canvas/js/bootstrap.offcanvas.min.js', '', '', true); // canvas
@@ -211,5 +211,4 @@ function get_cart_total(){
 }
 
 add_action( 'wp_ajax_get_cart_total', 'get_cart_total' );
-
 ?>
