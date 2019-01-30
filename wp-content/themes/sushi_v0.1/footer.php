@@ -39,98 +39,100 @@
                                     </div>
                                 </div>
                                 <div class="checkOutBtn">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                            <label class="control-label">Фамилия и имя</label>
-                                            <div class="controls">
-                                                <div class="input-group input-group-sm">
-                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="Иван Иванов" name="phone" required>
+                                    <form action="/wp-content/themes/sushi_v0.1/create_order.php" method="post">
+                                        <div class="row">
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">Фамилия и имя</label>
+                                                <div class="controls">
+                                                    <div class="input-group input-group-sm">
+                                                        <input type="text" size="30" class="form-control form-control-sm" placeholder="Иван Иванов" name="name" required>
+                                                    </div>
+                                                    <div class="help-block"></div>
                                                 </div>
-                                                <div class="help-block"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                            <label class="control-label">Название отеля</label>
-                                            <div class="controls">
-                                                <div class="input-group input-group-sm">
-                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="Название отеля" required>
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">Название отеля</label>
+                                                <div class="controls">
+                                                    <div class="input-group input-group-sm">
+                                                        <input type="text" size="30" class="form-control form-control-sm" placeholder="Название отеля" name="hotel" required>
+                                                    </div>
+                                                    <div class="help-block"></div>
                                                 </div>
-                                                <div class="help-block"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                            <label class="control-label">Местоположение</label>
-                                            <div class="controls">
-                                                <div class="input-group input-group-sm">
-                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="Местоположение">
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">Местоположение</label>
+                                                <div class="controls">
+                                                    <input type="hidden" value="" name="google_map_coords" id="google_map_coords">
+                                                    <input id="pac-input" name="google_map_address" class="form-control form-control-sm map-search-box" type="text" placeholder="Поиск.." required>
+                                                    <div id="map" class="mt-3"></div>
                                                 </div>
-                                                <div class="help-block"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                            <label class="control-label">E-mail</label>
-                                            <div class="controls">
-                                                <div class="input-group input-group-sm">
-                                                    <input type="e-mail" size="30" class="form-control form-control-sm" placeholder="example@mail.com" required>
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">E-mail</label>
+                                                <div class="controls">
+                                                    <div class="input-group input-group-sm">
+                                                        <input type="email" size="30" class="form-control form-control-sm" placeholder="example@mail.com" required>
+                                                    </div>
+                                                    <div class="help-block"></div>
                                                 </div>
-                                                <div class="help-block"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                            <label class="control-label">Телефон</label>
-                                            <div class="controls">
-                                                <div class="input-group input-group-sm">
-                                                    <span class="input-group-addon">+7</span>
-                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="9124785527" required>
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">Телефон</label>
+                                                <div class="controls">
+                                                    <div class="input-group input-group-sm">
+                                                        <span class="input-group-addon">+7</span>
+                                                        <input type="text" size="30" class="form-control form-control-sm" name="phone" placeholder="9124785527" required>
+                                                    </div>
+                                                    <div class="help-block"></div>
                                                 </div>
-                                                <div class="help-block"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                            <label class="control-label">Через что позвонить:</label>
-                                            <div class="controls">
-                                                <select name="address" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                            <label class="control-label">Количество человек</label>
-                                            <div class="controls">
-                                                <div class="input-group input-group-sm">
-                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="укажите количество человек" required>
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">Через что позвонить:</label>
+                                                <div class="controls">
+                                                    <select name="call_type" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
                                                 </div>
-                                                <div class="help-block"></div>
                                             </div>
-                                        </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                            <label class="control-label">Примечание к заказу:</label>
-                                            <div class="controls">
-                                                <div class="input-group input-group-sm">
-                                                    <input type="text" size="30" class="form-control form-control-sm" placeholder="Примечание">
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">Количество человек</label>
+                                                <div class="controls">
+                                                    <div class="input-group input-group-sm">
+                                                        <input type="text" size="30" class="form-control form-control-sm" placeholder="укажите количество человек" name="people_count" required>
+                                                    </div>
+                                                    <div class="help-block"></div>
                                                 </div>
-                                                <div class="help-block"></div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">Примечание к заказу:</label>
+                                                <div class="controls">
+                                                    <div class="input-group input-group-sm">
+                                                        <input type="text" size="30" class="form-control form-control-sm" name="order_comments" placeholder="Примечание">
+                                                    </div>
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
+                                                <label class="control-label">Доставка:</label>
+                                                <div class="controls">
+                                                    <select name="delivery" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                    </select>
+                                                    <div class="help-block"></div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                            <label class="control-label">Доставка:</label>
-                                            <div class="controls">
-                                                <select name="address" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                </select>
-                                                <div class="help-block"></div>
-                                            </div>
-                                        </div>
+                                        <br>
+                                        <button type="submit" class="btn btn-sm footerBtn">Оформить заказ</button>
                                     </div>
-                                    <br>
-                                    <input type="submit" name="checkout" class="btn btn-sm footerBtn" onclick="return $.checkOut('/', '#makeCheckOutFull')" value="Оформить заказ">
                                 </div>
+<!--                                --><?php //echo do_shortcode('[woocommerce_checkout]') ?>
                             </div>
                         </div>
                     </div>
