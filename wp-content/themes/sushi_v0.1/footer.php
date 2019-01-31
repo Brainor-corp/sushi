@@ -39,7 +39,7 @@
                                     </div>
                                 </div>
                                 <div class="checkOutBtn">
-                                    <form action="/wp-content/themes/sushi_v0.1/create_order.php" method="post">
+                                    <form action="/wp-content/themes/sushi_v0.1/create_order.php" method="post" id="order-form">
                                         <div class="row">
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
                                                 <label class="control-label">Фамилия и имя</label>
