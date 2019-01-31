@@ -202,7 +202,7 @@ wp_reset_query();
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" >
-                    Описание товара
+                    <?php the_field('product_description_head', $optionsPost->id)?>
                 </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true" class="text-danger">&times;</span>

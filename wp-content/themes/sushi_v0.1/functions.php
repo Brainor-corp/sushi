@@ -213,10 +213,17 @@ add_action( 'wp_ajax_nopriv_get_cart_update', 'get_cart_update' );
 function make_order() {
     $items = WC()->cart->get_cart();
 
+
     if(!count($items)) {
+        $the_slug = 'options';
+        $args = array(
+            'name' => $the_slug,
+        );
+        $optionsPost = get_posts($args);
+
         $result = [
             'status' => 'empty_cart',
-            'text' => 'Ваша корзина пуста. Для оформления заказа, пожалуйста, добавьте товары в корзину.'
+            'text' => get_field('empty_cart', $optionsPost->id),
         ];
         echo json_encode($result);
         wp_die();
