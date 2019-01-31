@@ -99,6 +99,7 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
         wp_deregister_script('jquery'); // выключаем стандартный jquery
         wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', '', '', false); // добавляем свой
         wp_enqueue_script('jquery-validate', get_template_directory_uri() . '/plugins/validate/jquery.validate.min.js', '', '', false); // добавляем свой
+        wp_enqueue_script('jquery-validate-additional', get_template_directory_uri() . '/plugins/validate/additional-methods.min.js', '', '', false); // добавляем свой
         wp_enqueue_script('jquery-validate-localization', get_template_directory_uri() . '/plugins/validate/localization/messages_ru.js', '', '', false); // добавляем свой
         wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', '', '', true); // бутстрап
         wp_enqueue_script('google_maps_api', 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAWS3GPEonG2-xYDOjCkKpsGiUSLQpFFQA', '', '', true); // и скрипты шаблона

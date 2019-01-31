@@ -45,7 +45,7 @@
                                                 <label class="control-label"><?php the_field('last_and_first_name', $optionsPost->id)?></label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
-                                                        <input type="text" size="30" class="form-control form-control-sm" name="name" required>
+                                                        <input type="text" size="30" class="form-control form-control-sm" id="formOrderName" name="name" data-rule-eng="true" required>
                                                     </div>
                                                     <div class="help-block"></div>
                                                 </div>

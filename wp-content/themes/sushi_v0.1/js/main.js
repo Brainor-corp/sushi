@@ -1,14 +1,15 @@
 $(document).ready(function () {
     $.validator.addMethod(
-        "regex",
-        function(value, element, regexp) {
-            var re = new RegExp(regexp);
-            return this.optional(element) || re.test(value);
+        "eng",
+        function(value, element) {
+            var regexp = /[a-zA-z0-9\\s\\\\-\\\\.\\\\,]+/;
+
+            return this.optional(element) || regexp.test(value);
         },
-        jQuery.validator.messages.required.lang
+        $.validator.messages.eng
     );
 
-    $("#Textbox").rules("add", { regex: "[a-zA-z0-9\\s\\\\-\\\\.\\\\,]*" })
+    $('#order-form').validate();
 
     $(document.body).on('updated_wc_div', function() {
         console.log('cart updated');
@@ -202,8 +203,6 @@ $(document).ready(function () {
     
     $(document).on('click', '.show-order-confirm', function () {
         if($('#order-form').valid({
-            wrapper: 'div',
-            errorLabelContainer: "#messageBox",
             lang : 'ru'
         })) {
             $('#order-modal').modal('show');
