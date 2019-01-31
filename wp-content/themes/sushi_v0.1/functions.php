@@ -98,6 +98,8 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
         if (is_admin()) return false; // если мы в админке - ничего не делаем
         wp_deregister_script('jquery'); // выключаем стандартный jquery
         wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', '', '', false); // добавляем свой
+        wp_enqueue_script('jquery-validate', get_template_directory_uri() . '/plugins/validate/jquery.validate.min.js', '', '', false); // добавляем свой
+        wp_enqueue_script('jquery-validate-localization', get_template_directory_uri() . '/plugins/validate/localization/messages_ru.js', '', '', false); // добавляем свой
         wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', '', '', true); // бутстрап
         wp_enqueue_script('google_maps_api', 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAWS3GPEonG2-xYDOjCkKpsGiUSLQpFFQA', '', '', true); // и скрипты шаблона
         wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', '', '', true); // и скрипты шаблона
@@ -205,6 +207,63 @@ function get_cart_update(){
 add_action( 'wp_ajax_get_cart_update', 'get_cart_update' );
 add_action( 'wp_ajax_nopriv_get_cart_update', 'get_cart_update' );
 
+/**
+ * Выполнение заказа
+ */
+function make_order() {
+    $items = WC()->cart->get_cart();
+
+    if(!count($items)) {
+        $result = [
+            'status' => 'empty_cart',
+            'text' => 'Ваша корзина пуста. Для оформления заказа, пожалуйста, добавьте товары в корзину.'
+        ];
+        echo json_encode($result);
+        wp_die();
+    }
+
+    $address = array(
+        'first_name'        => $_POST['name'],
+        'email'             => $_POST['email'],
+        'phone'             => $_POST['phone'],
+        'address_1'         => $_POST['google_map_address'],
+        'address_2'         => $_POST['google_map_coords'],
+        'company'           => $_POST['hotel'], // Представим, что компания -- это отель
+    );
+
+    $order_data = array(
+        'status'        => 'processing',
+        'customer_note' => $_POST['order_comments']
+    );
+    $order = wc_create_order($order_data);
+
+    foreach($items as $item => $values) {
+        $product_id = $values['product_id'];
+        $product = wc_get_product($product_id);
+        $quantity = (int)$values['quantity'];
+        $order->add_product($product, $quantity);
+    }
+
+    $order->set_address( $address, 'shipping' );
+
+    $order->calculate_totals();
+
+    $order->add_meta_data('delivery', sanitize_text_field($_POST['delivery']));
+    $order->add_meta_data('people_count', sanitize_text_field($_POST['people_count']));
+    $order->add_meta_data('call_type', sanitize_text_field($_POST['call_type']));
+    $order->save();
+
+    WC()->cart->empty_cart();
+
+    $result = [
+        'status' => 'ok',
+        'text' => 'Заказ сформирован.'
+    ];
+    echo json_encode($result);
+    wp_die();
+}
+add_action( 'wp_ajax_make_order', 'make_order' );
+add_action( 'wp_ajax_nopriv_make_order', 'make_order' );
 
 /**
  * Display field value on the order edit page

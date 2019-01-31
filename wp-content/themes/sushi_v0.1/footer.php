@@ -127,10 +127,52 @@
                                             </div>
                                         </div>
                                         <br>
-                                        <button type="submit" class="btn btn-sm footerBtn">Оформить заказ</button>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="btn btn-sm footerBtn show-order-confirm">
+                                            Оформить заказ
+                                        </button>
+
+                                        <!-- Order-Modal -->
+                                        <div class="modal fade" id="order-modal" tabindex="-1" role="dialog" aria-labelledby="order-modalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title text-dark" id="order-modalLabel">Подтверждение заказа</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-dark">
+                                                        Вы уверены, что хотите оформить заказ?
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Продолжить покупки</button>
+                                                        <button type="submit" class="btn btn-primary">Подтвердить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Result-Modal -->
+                                        <div class="modal fade" id="result-modal" tabindex="-1" role="dialog" aria-labelledby="result-modalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title text-dark" id="result-modalLabel">Статус заказа</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body text-dark content">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-<!--                                --><?php //echo do_shortcode('[woocommerce_checkout]') ?>
                             </div>
                         </div>
                     </div>
