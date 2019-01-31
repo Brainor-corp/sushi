@@ -11,6 +11,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); // кодировка ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="ajax-url" content="<?php echo admin_url('admin-ajax.php'); ?>">
 	<?php /* RSS и всякое */ ?>
 	<link rel="alternate" type="application/rdf+xml" title="RDF mapping" href="<?php bloginfo('rdf_url'); ?>">
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php bloginfo('rss_url'); ?>">

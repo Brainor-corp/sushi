@@ -98,6 +98,8 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
         if (is_admin()) return false; // если мы в админке - ничего не делаем
         wp_deregister_script('jquery'); // выключаем стандартный jquery
         wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', '', '', false); // добавляем свой
+        wp_enqueue_script('jquery-validate', get_template_directory_uri() . '/plugins/validate/jquery.validate.min.js', '', '', false); // добавляем свой
+        wp_enqueue_script('jquery-validate-localization', get_template_directory_uri() . '/plugins/validate/localization/messages_ru.js', '', '', false); // добавляем свой
         wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', '', '', true); // бутстрап
         wp_enqueue_script('google_maps_api', 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAWS3GPEonG2-xYDOjCkKpsGiUSLQpFFQA', '', '', true); // и скрипты шаблона
         wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', '', '', true); // и скрипты шаблона
@@ -164,23 +166,6 @@ if (!function_exists('content_class_by_sidebar')) { // если ф-я уже е�
 	}
 }
 
-//// Удаление товара из корзины
-//function remove_item_from_cart() {
-//    $cart = WC()->instance()->cart;
-//    $id = $_POST['product_id'];
-//    $cart_id = $cart->generate_cart_id($id);
-//    $cart_item_id = $cart->find_product_in_cart($cart_id);
-//
-//    if($cart_item_id){
-//        $cart->set_quantity($cart_item_id, 0);
-//        return true;
-//    }
-//    return false;
-//}
-//
-//add_action('wp_ajax_remove_item_from_cart', 'remove_item_from_cart');
-//add_action('wp_ajax_nopriv_remove_item_from_cart', 'remove_item_from_cart');
-
 add_action('wp_ajax_get_shortcode_content', 'get_shortcode_content');
 
 function get_shortcode_content() {
@@ -206,29 +191,79 @@ function conditionally_load_woc_js_css(){
 
 add_action( 'wp_enqueue_scripts', 'conditionally_load_woc_js_css' );
 
-function get_cart_total(){
-    do_action( 'woocommerce_cart_collaterals' );
-    wp_die();
-}
 
-add_action( 'wp_ajax_get_cart_total', 'get_cart_total' );
-
-
+/**
+ * Обновление блока корзины
+ */
 function get_cart_update(){
-//    $date['cart'] = print do_shortcode('[woocommerce_cart]');
-//    $date['total'] = do_action( 'woocommerce_cart_collaterals' );
-
     global $woocommerce;
 
     $date['cart'] = do_shortcode('[woocommerce_cart]');
-//    $date['total'] = do_action( 'woocommerce_cart_collaterals' );
     $date['total'] = $woocommerce->cart->get_cart_total();
-//    wp_die();
 
     echo json_encode($date);
     wp_die();
 }
 add_action( 'wp_ajax_get_cart_update', 'get_cart_update' );
+add_action( 'wp_ajax_nopriv_get_cart_update', 'get_cart_update' );
+
+/**
+ * Выполнение заказа
+ */
+function make_order() {
+    $items = WC()->cart->get_cart();
+
+    if(!count($items)) {
+        $result = [
+            'status' => 'empty_cart',
+            'text' => 'Ваша корзина пуста. Для оформления заказа, пожалуйста, добавьте товары в корзину.'
+        ];
+        echo json_encode($result);
+        wp_die();
+    }
+
+    $address = array(
+        'first_name'        => $_POST['name'],
+        'email'             => $_POST['email'],
+        'phone'             => $_POST['phone'],
+        'address_1'         => $_POST['google_map_address'],
+        'address_2'         => $_POST['google_map_coords'],
+        'company'           => $_POST['hotel'], // Представим, что компания -- это отель
+    );
+
+    $order_data = array(
+        'status'        => 'processing',
+        'customer_note' => $_POST['order_comments']
+    );
+    $order = wc_create_order($order_data);
+
+    foreach($items as $item => $values) {
+        $product_id = $values['product_id'];
+        $product = wc_get_product($product_id);
+        $quantity = (int)$values['quantity'];
+        $order->add_product($product, $quantity);
+    }
+
+    $order->set_address( $address, 'shipping' );
+
+    $order->calculate_totals();
+
+    $order->add_meta_data('delivery', sanitize_text_field($_POST['delivery']));
+    $order->add_meta_data('people_count', sanitize_text_field($_POST['people_count']));
+    $order->add_meta_data('call_type', sanitize_text_field($_POST['call_type']));
+    $order->save();
+
+    WC()->cart->empty_cart();
+
+    $result = [
+        'status' => 'ok',
+        'text' => 'Заказ сформирован.'
+    ];
+    echo json_encode($result);
+    wp_die();
+}
+add_action( 'wp_ajax_make_order', 'make_order' );
+add_action( 'wp_ajax_nopriv_make_order', 'make_order' );
 
 /**
  * Display field value on the order edit page
@@ -242,8 +277,6 @@ function custom_checkout_field_display_admin_order_meta($order){
 }
 
 if( function_exists('acf_add_options_page') ) {
-
     acf_add_options_page();
-
 }
 ?>
