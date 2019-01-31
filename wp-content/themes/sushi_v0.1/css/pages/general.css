@@ -347,3 +347,7 @@ header #shopMenu li.active {
     position: relative;
     height:auto;
 }
+
+#map {
+    height: 400px;
+}
