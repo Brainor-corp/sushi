@@ -11,34 +11,33 @@ $address = array(
     'address_1'         => $_POST['google_map_address'],
     'address_2'         => $_POST['google_map_coords'],
     'company'           => $_POST['hotel'], // Представим, что компания -- это отель
-    'delivery'          => $_POST['delivery'], // Нужно кастомное поле
-    'people_count'      => $_POST['people_count'], // Нужно кастомное поле
-    'call_type'         => $_POST['call_type'], // Нужно кастомное поле
+//    'delivery'          => $_POST['delivery'], // Нужно кастомное поле
+//    'people_count'      => $_POST['people_count'], // Нужно кастомное поле
+//    'call_type'         => $_POST['call_type'], // Нужно кастомное поле
 );
 
-$order = wc_create_order();
+$order_data = array(
+    'status'        => 'processing',
+    'customer_note' => $_POST['order_comments']
+);
+$order = wc_create_order($order_data);
 
 $items = WC()->cart->get_cart();
 foreach($items as $item => $values) {
     $product_id = $values['product_id'];
     $product = wc_get_product($product_id);
-    $var_id = $values['variation_id'];
-    $var_slug = $values['variation']['attribute_pa_weight'];
     $quantity = (int)$values['quantity'];
-    $variationsArray = array();
-    $variationsArray['variation'] = array(
-        'pa_weight' => $var_slug
-    );
-    $var_product = new WC_Product_Variation($var_id);
-    $order->add_product($var_product, $quantity, $variationsArray);
+    $order->add_product($product, $quantity);
 }
 
-$order->add_order_note( $_POST['order_comments'] );
-$order->set_address( $address, 'billing' );
 $order->set_address( $address, 'shipping' );
 
 $order->calculate_totals();
-$order->update_status( 'processing' );
+
+$order->add_meta_data('delivery', sanitize_text_field($_POST['delivery']));
+$order->add_meta_data('people_count', sanitize_text_field($_POST['people_count']));
+$order->add_meta_data('call_type', sanitize_text_field($_POST['call_type']));
+$order->save();
 
 WC()->cart->empty_cart();
 

@@ -90,10 +90,9 @@
                                                 <label class="control-label">Через что позвонить:</label>
                                                 <div class="controls">
                                                     <select name="call_type" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
+                                                        <?php foreach (explode(';', get_field('call_type', $optionsPost->id)) as $option): ?>
+                                                            <option value="<?php echo $option ?>"><?php echo $option ?></option>
+                                                        <?php endforeach; ?>
                                                     </select>
                                                 </div>
                                             </div>
@@ -119,10 +118,9 @@
                                                 <label class="control-label">Доставка:</label>
                                                 <div class="controls">
                                                     <select name="delivery" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
+                                                        <?php foreach (explode(';', get_field('delivery', $optionsPost->id)) as $option): ?>
+                                                            <option value="<?php echo $option ?>"><?php echo $option ?></option>
+                                                        <?php endforeach; ?>
                                                     </select>
                                                     <div class="help-block"></div>
                                                 </div>

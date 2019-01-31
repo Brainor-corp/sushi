@@ -213,4 +213,21 @@ function get_cart_total(){
 }
 
 add_action( 'wp_ajax_get_cart_total', 'get_cart_total' );
+
+/**
+ * Display field value on the order edit page
+ */
+add_action( 'woocommerce_admin_order_data_after_shipping_address', 'custom_checkout_field_display_admin_order_meta', 10, 1 );
+
+function custom_checkout_field_display_admin_order_meta($order){
+    echo '<p><strong>'.__('Тип доставки').':</strong> <br/>' . get_post_meta( $order->get_id(), 'delivery', true ) . '</p>' .
+    '<p><strong>'.__('Кол-во человек').':</strong> <br/>' . get_post_meta( $order->get_id(), 'people_count', true ) . '</p>' .
+    '<p><strong>'.__('Через что позвонить').':</strong> <br/>' . get_post_meta( $order->get_id(), 'call_type', true ) . '</p>';
+}
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page();
+
+}
 ?>
