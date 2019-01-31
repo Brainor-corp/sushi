@@ -14,7 +14,7 @@
 
     <section class="container-fluid">
         <div id="makeCheckOutFull" class="container nav-container px-0">
-            <h4 class="h2">Оформление заказа</h4>
+            <h4 class="h2"><?php the_field('order_confirm', $optionsPost->id)?></h4>
             <div id="makeCheckOut">
                 <div class="row">
                     <div class="col-lg-8 col-12" id="cart-container">
@@ -23,7 +23,7 @@
                     <div class="col-lg-4 col-12">
                         <div class="checkOut stickyeah" data-stickyeah-offset="96" data-stickyeah-push="sub" data-stickyeah-class="open">
                             <div class="cnt">
-                                <div>Общая стоимость</div>
+                                <div><?php the_field('total_cost', $optionsPost->id)?></div>
                                 <div class="total">
 <!--                                    <strong>--><?php //echo $woocommerce->cart->get_cart_total(); ?><!--</strong>-->
                                     <div class="cart-collaterals" id="cart-total-container">
@@ -42,33 +42,33 @@
                                     <form action="/wp-content/themes/sushi_v0.1/create_order.php" method="post">
                                         <div class="row">
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">Фамилия и имя</label>
+                                                <label class="control-label"><?php the_field('last_and_first_name', $optionsPost->id)?></label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
-                                                        <input type="text" size="30" class="form-control form-control-sm" placeholder="Иван Иванов" name="name" required>
+                                                        <input type="text" size="30" class="form-control form-control-sm" name="name" required>
                                                     </div>
                                                     <div class="help-block"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">Название отеля</label>
+                                                <label class="control-label"><?php the_field('hotel_name', $optionsPost->id)?></label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
-                                                        <input type="text" size="30" class="form-control form-control-sm" placeholder="Название отеля" name="hotel" required>
+                                                        <input type="text" size="30" class="form-control form-control-sm" name="hotel" required>
                                                     </div>
                                                     <div class="help-block"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">Местоположение</label>
+                                                <label class="control-label"><?php the_field('location', $optionsPost->id)?></label></label>
                                                 <div class="controls">
                                                     <input type="hidden" value="" name="google_map_coords" id="google_map_coords">
-                                                    <input id="pac-input" name="google_map_address" class="form-control form-control-sm map-search-box" type="text" placeholder="Поиск.." required>
+                                                    <input id="pac-input" name="google_map_address" class="form-control form-control-sm map-search-box" type="text" required>
                                                     <div id="map" class="mt-3"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">E-mail</label>
+                                                <label class="control-label"><?php the_field('e-mail', $optionsPost->id)?></label></label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
                                                         <input type="email" size="30" class="form-control form-control-sm" placeholder="example@mail.com" required>
@@ -77,7 +77,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">Телефон</label>
+                                                <label class="control-label"><?php the_field('phone_order', $optionsPost->id)?></label></label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
                                                         <span class="input-group-addon">+7</span>
@@ -87,7 +87,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">Через что позвонить:</label>
+                                                <label class="control-label"><?php the_field('call_method', $optionsPost->id)?></label></label>
                                                 <div class="controls">
                                                     <select name="call_type" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
                                                         <?php foreach (explode(';', get_field('call_type', $optionsPost->id)) as $option): ?>
@@ -97,27 +97,27 @@
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">Количество человек</label>
+                                                <label class="control-label"><?php the_field('number_of_persons', $optionsPost->id)?></label></label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
-                                                        <input type="text" size="30" class="form-control form-control-sm" placeholder="укажите количество человек" name="people_count" required>
+                                                        <input type="text" size="30" class="form-control form-control-sm" name="people_count" required>
                                                     </div>
                                                     <div class="help-block"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">Примечание к заказу:</label>
+                                                <label class="control-label"><?php the_field('order_note', $optionsPost->id)?></label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
-                                                        <input type="text" size="30" class="form-control form-control-sm" name="order_comments" placeholder="Примечание">
+                                                        <input type="text" size="30" class="form-control form-control-sm" name="order_comments">
                                                     </div>
                                                     <div class="help-block"></div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-12 col-lg-12 col-md-6 col-12 control-group form-group">
-                                                <label class="control-label">Доставка:</label>
+                                                <label class="control-label"><?php the_field('delivery_order', $optionsPost->id)?></label>
                                                 <div class="controls">
-                                                    <select name="delivery" placeholder="Адрес доставки" class="form-control form-control-sm" required="required">
+                                                    <select name="delivery" class="form-control form-control-sm" required="required">
                                                         <?php foreach (explode(';', get_field('delivery', $optionsPost->id)) as $option): ?>
                                                             <option value="<?php echo $option ?>"><?php echo $option ?></option>
                                                         <?php endforeach; ?>
