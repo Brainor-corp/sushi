@@ -99,7 +99,9 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
         wp_deregister_script('jquery'); // выключаем стандартный jquery
         wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', '', '', false); // добавляем свой
         wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', '', '', true); // бутстрап
+        wp_enqueue_script('google_maps_api', 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAWS3GPEonG2-xYDOjCkKpsGiUSLQpFFQA', '', '', true); // и скрипты шаблона
         wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', '', '', true); // и скрипты шаблона
+        wp_enqueue_script('google_maps_order', get_template_directory_uri() . '/js/google-maps-for-order.js', '', '', true); // и скрипты шаблона
 //        wp_enqueue_script('canvas', get_template_directory_uri() . '/plugins/canvas/js/bootstrap.offcanvas.min.js', '', '', true); // canvas
         wp_enqueue_script('fas', get_template_directory_uri() . '/plugins/fontawesome/js/all.js');//fontawesome
     }
@@ -185,7 +187,6 @@ function get_shortcode_content() {
     $shortcode = $_POST['shortcode'];
 	echo do_shortcode($shortcode);
     wp_die();
-
 }
 
 function conditionally_load_woc_js_css(){
@@ -211,4 +212,38 @@ function get_cart_total(){
 }
 
 add_action( 'wp_ajax_get_cart_total', 'get_cart_total' );
+
+
+function get_cart_update(){
+//    $date['cart'] = print do_shortcode('[woocommerce_cart]');
+//    $date['total'] = do_action( 'woocommerce_cart_collaterals' );
+
+    global $woocommerce;
+
+    $date['cart'] = do_shortcode('[woocommerce_cart]');
+//    $date['total'] = do_action( 'woocommerce_cart_collaterals' );
+    $date['total'] = $woocommerce->cart->get_cart_total();
+//    wp_die();
+
+    echo json_encode($date);
+    wp_die();
+}
+add_action( 'wp_ajax_get_cart_update', 'get_cart_update' );
+
+/**
+ * Display field value on the order edit page
+ */
+add_action( 'woocommerce_admin_order_data_after_shipping_address', 'custom_checkout_field_display_admin_order_meta', 10, 1 );
+
+function custom_checkout_field_display_admin_order_meta($order){
+    echo '<p><strong>'.__('Тип доставки').':</strong> <br/>' . get_post_meta( $order->get_id(), 'delivery', true ) . '</p>' .
+    '<p><strong>'.__('Кол-во человек').':</strong> <br/>' . get_post_meta( $order->get_id(), 'people_count', true ) . '</p>' .
+    '<p><strong>'.__('Через что позвонить').':</strong> <br/>' . get_post_meta( $order->get_id(), 'call_type', true ) . '</p>';
+}
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page();
+
+}
 ?>

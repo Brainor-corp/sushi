@@ -35,6 +35,13 @@
 <body <?php body_class(); // все классы для body ?> style="position: relative;" data-spy="scroll" data-target="#list-products">
 
 
+    <?php
+        $the_slug = 'options';
+        $args = array(
+            'name'        => $the_slug,
+        );
+        $optionsPost = get_posts($args);
+    ?>
 
 
 
@@ -63,7 +70,7 @@
                 </li>
                 <li id="menuInfo">
                     <p class="menuPhone p-5">
-                        <strong>(495) 800-08-88</strong><br><i class="far fa-clock"></i> 11:00-24:00
+                        <strong><?php the_field('call_type', $optionsPost->id) ?></strong><br><i class="far fa-clock"></i> 11:00-24:00
                     </p>
                     <p class="aboutDelivery">
                     </p>
