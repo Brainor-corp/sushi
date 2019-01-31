@@ -1,36 +1,34 @@
 $(document).ready(function () {
+    $(document.body).on('updated_wc_div', function() {
+        console.log('cart updated');
+        if(!$('.cart-table').length) {
+            console.log('empty');
+            $("#cart-total-container .cart_totals").hide(100, function() {
+                $(this).html('<span class="woocommerce-Price-amount amount">0<span class="woocommerce-Price-currencySymbol"><span class="rur">р<span>уб.</span></span></span></span>').show(100);
+            });
+        }
+    });
+
     function updateCart() {
         $.ajax({
             type: 'POST',
             url: '/wp-admin/admin-ajax.php',
             data: {
-                action: 'get_cart_total'
+                action: 'get_cart_update',
             },
-            success: function(data){
-                $("#cart-total-container").hide(100, function() {
-                    $(this).html(data).show(100);
-                });
-            },
-            error: function (data) {
-                console.log(data);
-            }
-        });
-
-        $.ajax({
-            type: 'POST',
-            url: '/wp-admin/admin-ajax.php',
-            data: {
-                action: 'get_shortcode_content',
-                shortcode: '[woocommerce_cart]',
-            },
+            dataType: 'json',
             success: function(data){
                 $("#cart-container").hide(100, function() {
-                    $(this).html(data).show(100);
+                    $(this).html(data['cart']).show(100);
+                });
+                $("#cart-total-container .cart_totals").hide(100, function() {
+                    $(this).html(data['total']).show(100);
                 });
                 $('.ajaxLoader').hide();
             },
             error: function (data) {
                 console.log(data);
+                $('.ajaxLoader').hide();
             }
         });
     }

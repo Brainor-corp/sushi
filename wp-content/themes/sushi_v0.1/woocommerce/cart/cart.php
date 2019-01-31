@@ -128,7 +128,7 @@ do_action( 'woocommerce_before_cart' ); ?>
                         <?php } ?>
                     </td>
                     <td colspan="3" class="actions">
-                        <button type="submit" class="btn btn-sm footerBtn" name="update_cart" value="" disabled>Пересчитать</button>
+                        <button type="submit" class="btn btn-sm footerBtn" name="update_cart" value="" disabled><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
 
                         <?php do_action( 'woocommerce_cart_actions' ); ?>
 

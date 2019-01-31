@@ -187,7 +187,6 @@ function get_shortcode_content() {
     $shortcode = $_POST['shortcode'];
 	echo do_shortcode($shortcode);
     wp_die();
-
 }
 
 function conditionally_load_woc_js_css(){
@@ -213,6 +212,23 @@ function get_cart_total(){
 }
 
 add_action( 'wp_ajax_get_cart_total', 'get_cart_total' );
+
+
+function get_cart_update(){
+//    $date['cart'] = print do_shortcode('[woocommerce_cart]');
+//    $date['total'] = do_action( 'woocommerce_cart_collaterals' );
+
+    global $woocommerce;
+
+    $date['cart'] = do_shortcode('[woocommerce_cart]');
+//    $date['total'] = do_action( 'woocommerce_cart_collaterals' );
+    $date['total'] = $woocommerce->cart->get_cart_total();
+//    wp_die();
+
+    echo json_encode($date);
+    wp_die();
+}
+add_action( 'wp_ajax_get_cart_update', 'get_cart_update' );
 
 /**
  * Display field value on the order edit page
