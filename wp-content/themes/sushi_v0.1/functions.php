@@ -253,7 +253,6 @@ function make_order() {
     );
 
     $order_data = array(
-        'status'        => 'processing',
         'customer_note' => $params['order_comments']
     );
     $order = wc_create_order($order_data);
@@ -278,7 +277,8 @@ function make_order() {
 
     $result = [
         'status' => 'ok',
-        'text' => get_field('order_complete', $optionsPost->ID)
+        'url' => $order->get_checkout_payment_url()
+//        'text' => get_field('order_complete', $optionsPost->ID)
     ];
     echo json_encode($result);
     wp_die();
