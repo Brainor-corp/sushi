@@ -217,17 +217,24 @@ add_action( 'wp_ajax_nopriv_get_cart_update', 'get_cart_update' );
 function make_order() {
     $items = WC()->cart->get_cart();
 
+    $the_slug = 'options';
+    $args = array(
+        'name' => $the_slug,
+    );
+
+    if(!$optionsPost = get_posts($args)[0]) {
+        $result = [
+            'status' => 'error',
+            'text' => 'site_error_1' // Не найдена страница с настройками
+        ];
+        echo json_encode($result);
+        wp_die();
+	}
 
     if(!count($items)) {
-        $the_slug = 'options';
-        $args = array(
-            'name' => $the_slug,
-        );
-        $optionsPost = get_posts($args);
-
         $result = [
             'status' => 'empty_cart',
-            'text' => get_field('empty_cart', $optionsPost->id),
+            'text' => get_field('empty_cart', $optionsPost->ID)
         ];
         echo json_encode($result);
         wp_die();
@@ -268,7 +275,7 @@ function make_order() {
 
     $result = [
         'status' => 'ok',
-        'text' => 'Заказ сформирован.'
+        'text' => get_field('order_complete', $optionsPost->ID)
     ];
     echo json_encode($result);
     wp_die();

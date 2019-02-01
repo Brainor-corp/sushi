@@ -2,7 +2,7 @@ $(document).ready(function () {
     $.validator.addMethod(
         'eng',
         function(value, element) {
-            var regexp = /[\u0E00-\u0E7Fa-zA-z0-9\\s\\\\-\\\\.\\\\,\\"\\']+/;
+            var regexp = /[\u0E00-\u0E7Fa-zA-z0-9\\s\\\\-\\\\.\\\\,\\"\\'\\;\\:\\?\\%\\$\\#\\@\\!\\*\\&\\№\\/\\<\\>\\^\\&\\(\\)\\+\\=\\-\\_\\~\\`]+/;
 
             return this.optional(element) || regexp.test(value);
         },
@@ -23,6 +23,7 @@ $(document).ready(function () {
 
     function updateCart() {
         console.log('here');
+        console.log($('meta[name="ajax-url"]').attr('content'));
         $.ajax({
             type: 'POST',
             url: $('meta[name="ajax-url"]').attr('content'),
