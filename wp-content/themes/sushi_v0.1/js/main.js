@@ -23,6 +23,7 @@ $(document).ready(function () {
 
     function updateCart() {
         console.log('here');
+        console.log($('meta[name="ajax-url"]').attr('content'));
         $.ajax({
             type: 'POST',
             url: $('meta[name="ajax-url"]').attr('content'),
