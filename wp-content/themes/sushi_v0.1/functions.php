@@ -100,8 +100,11 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
         wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', '', '', false); // добавляем свой
         wp_enqueue_script('jquery-validate', get_template_directory_uri() . '/plugins/validate/jquery.validate.min.js', '', '', false); // добавляем свой
         wp_enqueue_script('jquery-validate-additional', get_template_directory_uri() . '/plugins/validate/additional-methods.min.js', '', '', false); // добавляем свой
-        wp_enqueue_script('jquery-validate-localization', get_template_directory_uri() . '/plugins/validate/localization/messages_ru.js', '', '', false); // добавляем свой
-        wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', '', '', true); // бутстрап
+        // Локализация ошибок валидатора
+        if(file_exists(get_stylesheet_directory() . '/plugins/validate/localization/messages_' . get_locale() . '.js')) {
+            wp_enqueue_script('jquery-validate-localization', get_template_directory_uri() . '/plugins/validate/localization/messages_' . get_locale() . '.js', '', '', false); // добавляем свой
+        }
+		wp_enqueue_script('bootstrap', get_template_directory_uri() . '/js/bootstrap/bootstrap.min.js', '', '', true); // бутстрап
         wp_enqueue_script('google_maps_api', 'https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAWS3GPEonG2-xYDOjCkKpsGiUSLQpFFQA', '', '', true); // и скрипты шаблона
         wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', '', '', true); // и скрипты шаблона
         wp_enqueue_script('google_maps_order', get_template_directory_uri() . '/js/google-maps-for-order.js', '', '', true); // и скрипты шаблона

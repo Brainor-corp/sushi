@@ -54,7 +54,7 @@
                                                 <label class="control-label"><?php the_field('hotel_name', $optionsPost->id)?></label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
-                                                        <input type="text" size="30" class="form-control form-control-sm" name="hotel" required>
+                                                        <input type="text" size="30" class="form-control form-control-sm" name="hotel" data-rule-eng="true" required>
                                                     </div>
                                                     <div class="help-block"></div>
                                                 </div>

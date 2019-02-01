@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $.validator.addMethod(
-        "eng",
+        'eng',
         function(value, element) {
-            var regexp = /[a-zA-z0-9\\s\\\\-\\\\.\\\\,]+/;
+            var regexp = /[\u0E00-\u0E7Fa-zA-z0-9\\s\\\\-\\\\.\\\\,\\"\\']+/;
 
             return this.optional(element) || regexp.test(value);
         },
@@ -202,9 +202,7 @@ $(document).ready(function () {
     });
     
     $(document).on('click', '.show-order-confirm', function () {
-        if($('#order-form').valid({
-            lang : 'ru'
-        })) {
+        if($('#order-form').valid()) {
             $('#order-modal').modal('show');
         }
     })
