@@ -133,7 +133,13 @@ do_action( 'woocommerce_before_cart' ); ?>
                         <?php do_action( 'woocommerce_cart_actions' ); ?>
 
                         <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce', false ); ?>
-                        <input type="hidden" name="_wp_http_referer" value="/">
+                        <?php
+                            $lang = '';
+                            if(get_locale() != 'ru_RU') {
+                                $lang = explode('_', get_locale())[0];
+                            }
+                        ?>
+                        <input type="hidden" name="_wp_http_referer" value="/<?php echo $lang?>">
                     </td>
                 </tr>
 

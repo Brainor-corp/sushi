@@ -109,7 +109,7 @@
                                                 <label class="control-label"><?php the_field('order_note', $optionsPost->id)?></label>
                                                 <div class="controls">
                                                     <div class="input-group input-group-sm">
-                                                        <input type="text" size="30" class="form-control form-control-sm" name="order_comments">
+                                                        <input type="text" size="30" class="form-control form-control-sm" name="order_comments" data-rule-eng="true">
                                                     </div>
                                                     <div class="help-block"></div>
                                                 </div>
