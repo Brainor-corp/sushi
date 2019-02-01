@@ -93,12 +93,15 @@ $(document).ready(function () {
 
     $(document).on('submit', '#order-form', function (event) {
        event.preventDefault();
+       let request = $(this).serialize();
+       console.log(request);
 
         $.ajax({
             type: 'POST',
             url: $('meta[name="ajax-url"]').attr('content'),
             data: {
                 action: 'make_order',
+                request: request
             },
             dataType: 'json',
             beforeSend: function() {
