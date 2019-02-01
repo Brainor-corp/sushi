@@ -56,22 +56,23 @@
             </div>
         </div>
         <nav id="menu">
-            <ul id="mm-0">
-                <li>
-                    <a href="#rolls" class="anchor">Роллы</a>
-                </li>
-                <li>
-                    <a href="#sushi" class="anchor">Суши</a>
-                </li>
-                <li>
-                    <a href="#combinations" class="anchor">Наборы</a>
-                </li>
-                <li>
-                    <a href="#drinks" class="anchor">Напитки</a>
-                </li>
+            <ul id="mm-0 list-group">
+                <?php wp_nav_menu( array( 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
+<!--                <li>-->
+<!--                    <a href="#rolls" class="anchor">Роллы</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#sushi" class="anchor">Суши</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#combinations" class="anchor">Наборы</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#drinks" class="anchor">Напитки</a>-->
+<!--                </li>-->
                 <li id="menuInfo">
                     <p class="menuPhone p-5">
-                        <strong><?php the_field('call_type', $optionsPost->id) ?></strong><br><i class="far fa-clock"></i> 11:00-24:00
+                        <strong><?php the_field('phone', $optionsPost->id) ?></strong><br><i class="far fa-clock"></i> 11:00-24:00
                     </p>
                     <p class="aboutDelivery">
                     </p>
