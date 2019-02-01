@@ -8,4 +8,26 @@
     .valI{
         width: 100%!important;
     }
+    .list-group-item.active {
+        border: none!important;
+        border-bottom: none!important;
+        background-color: transparent!important;
+        color: white!important;
+    }
+    .list-group-item:last-child {
+        border-radius: 0!important;
+    }
+    .list-group-item:first-child {
+        border-radius: 0!important;
+    }
+    .list-group-item {
+        padding: 1rem 0.75rem!important;
+        padding-bottom: 12px!important;
+        margin-bottom: 0!important;
+        background-color: transparent!important;
+        border: none!important;
+    }
+    .list-inline-item {
+        display: block!important;
+    }
 }

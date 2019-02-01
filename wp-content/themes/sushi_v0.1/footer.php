@@ -129,7 +129,7 @@
                                         <br>
                                         <!-- Button trigger modal -->
                                         <button type="button" class="btn btn-sm footerBtn show-order-confirm">
-                                            Оформить заказ
+                                            <?php the_field('checkout_btn', $optionsPost->id)?>
                                         </button>
 
                                         <!-- Order-Modal -->
@@ -137,17 +137,17 @@
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title text-dark" id="order-modalLabel">Подтверждение заказа</h5>
+                                                        <h5 class="modal-title text-dark" id="order-modalLabel"><?php the_field('confirm_order', $optionsPost->id)?></h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
                                                     </div>
                                                     <div class="modal-body text-dark">
-                                                        Вы уверены, что хотите оформить заказ?
+                                                        <?php the_field('you_sure', $optionsPost->id)?>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Продолжить покупки</button>
-                                                        <button type="submit" class="btn btn-primary">Подтвердить</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php the_field('continue_btn', $optionsPost->id)?></button>
+                                                        <button type="submit" class="btn btn-primary"><?php the_field('confirm_btn', $optionsPost->id)?></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -158,7 +158,7 @@
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title text-dark" id="result-modalLabel">Статус заказа</h5>
+                                                        <h5 class="modal-title text-dark" id="result-modalLabel"><?php the_field('order_status', $optionsPost->id)?></h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
@@ -166,7 +166,7 @@
                                                     <div class="modal-body text-dark content">
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php the_field('close_btn', $optionsPost->id)?></button>
                                                     </div>
                                                 </div>
                                             </div>
