@@ -222,6 +222,9 @@ function make_order() {
         'name' => $the_slug,
     );
 
+    $params = array();
+    parse_str($_POST['request'], $params);
+
     if(!$optionsPost = get_posts($args)[0]) {
         $result = [
             'status' => 'error',
@@ -241,17 +244,17 @@ function make_order() {
     }
 
     $address = array(
-        'first_name'        => $_POST['name'],
-        'email'             => $_POST['email'],
-        'phone'             => $_POST['phone'],
-        'address_1'         => $_POST['google_map_address'],
-        'address_2'         => $_POST['google_map_coords'],
-        'company'           => $_POST['hotel'], // Представим, что компания -- это отель
+        'first_name'        => $params['name'],
+        'email'             => $params['email'],
+        'phone'             => $params['phone'],
+        'address_1'         => $params['google_map_address'],
+        'address_2'         => $params['google_map_coords'],
+        'company'           => $params['hotel'], // Представим, что компания -- это отель
     );
 
     $order_data = array(
         'status'        => 'processing',
-        'customer_note' => $_POST['order_comments']
+        'customer_note' => $params['order_comments']
     );
     $order = wc_create_order($order_data);
 
@@ -266,9 +269,9 @@ function make_order() {
 
     $order->calculate_totals();
 
-    $order->add_meta_data('delivery', sanitize_text_field($_POST['delivery']));
-    $order->add_meta_data('people_count', sanitize_text_field($_POST['people_count']));
-    $order->add_meta_data('call_type', sanitize_text_field($_POST['call_type']));
+    $order->add_meta_data('delivery', sanitize_text_field($params['delivery']));
+    $order->add_meta_data('people_count', sanitize_text_field($params['people_count']));
+    $order->add_meta_data('call_type', sanitize_text_field($params['call_type']));
     $order->save();
 
     WC()->cart->empty_cart();
