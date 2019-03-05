@@ -41,6 +41,7 @@ $(document).ready(function () {
                 $('.ajaxLoader').hide();
             },
             error: function (data) {
+                console.log('error');
                 console.log(data);
                 $('.ajaxLoader').hide();
             }
@@ -109,10 +110,11 @@ $(document).ready(function () {
                 $('.ajaxLoader').show();
             },
             success: function(data){
-                updateCart();
-                $('#result-modal .content').text(data['text']);
-                $('#result-modal').modal('show');
-                $('.ajaxLoader').hide();
+                // updateCart();
+                // $('#result-modal .content').text(data['text']);
+                // $('#result-modal').modal('show');
+                // $('.ajaxLoader').hide();
+                window.location = data['url'];
             },
             error: function (data) {
                 console.log(data);

@@ -21,6 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
+<?php get_header('inside') ?>
+
 <ul class="order_details">
 	<li class="order">
 		<?php esc_html_e( 'Order number:', 'woocommerce' ); ?>
